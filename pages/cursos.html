@@ -6,6 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Kursevi - Cursos</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -22,7 +23,7 @@
 
          <h2>Cursos</h2>
 
-         <nav>
+       <!--   <nav>
             <ul class="menu">
                <li><a href="../index.html">| Home</a></li>
                <li><a href="cursos.html">| Cursos</a></li>
@@ -30,7 +31,43 @@
                <li><a href="nosotros.html">| Quienes somos</a></li>
                <li><a href="contacto.html">| Contacto</a></li>
             </ul>
-         </nav>
+         </nav> -->
+
+         <nav class="navbar navbar-expand-lg navbar-light  menu">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        | Cursos
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <li><a class="dropdown-item" href="cursos.html">Cursos de Oficios</a></li>
+                       <li><a class="dropdown-item" href="cursos.html">Cursos de Gestión</a></li>        
+                     </ul>
+                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="alumnos.html">| Alumnos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">| Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contacto.html">| Contacto</a>
+                   </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
       </header>
 
       <div class="cursos gridCursos">
@@ -110,6 +147,11 @@
          <h3>© Kursevi 2022. Todos los derechos reservados.</h3>
       </footer>
    </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+   </script>
+
 </body>
 
 </html>

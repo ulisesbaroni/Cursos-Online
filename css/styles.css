@@ -138,6 +138,17 @@ header h3 {
 ul {
     text-align: center;
 }
+
+.form-check-input {
+    margin-left: 37% !important;
+    margin-right: 8px !important;
+}
+
+.form-check-label {
+text-align: left !important;
+
+}
+
 /* -----------FIN EDITANDO BOOTSTRAP--------- */
 
 
@@ -395,7 +406,7 @@ footer {
 
 .Alumnos h3 {
     font-family: "Light";
-    color: crimson;
+    color:black;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -409,7 +420,7 @@ footer {
     padding: 2%;
     font-size: 15px;
     margin: 20px 10px;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     border-radius: 15px;
 }
 
@@ -436,7 +447,7 @@ footer {
 
 
 .quienesSomos p {
-    background-color: rgb(238, 175, 153);
+    background-color: rgb(238, 175, 153) !important;
     color: black;
     text-align: center;
     font-family: "Light";
@@ -444,7 +455,7 @@ footer {
     font-size: 15px;
     margin: 20px 10px;
     border: black solid 2px;
-    border-radius: 15px;
+    border-radius: 15px !important;
 }
 
 .botonNuestros {
@@ -945,13 +956,15 @@ footer a img:hover {
 
     /* DIV */
     .quienesSomos h2 {
-        color: white;
+        background-color: transparent !important;
+        color: white !important;
         margin-top: 50px;
         margin-bottom: 50px;
+        font-size: 35px;
     }
 
     .quienesSomos p {
-        background-color: transparent;
+        background-color: transparent !important;
         color: white;
         text-align: left center;
         font-size: 28px;

@@ -1,419 +1,318 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /* FUENTES */
 @font-face {
-    font-family: "RobotoRegular";
-    src: url(../fonts/RobotoCondensed-Regular.ttf);
-}
+  font-family: "RobotoRegular";
+  src: url(../fonts/RobotoCondensed-Regular.ttf); }
 
 @font-face {
-    font-family: "Extralight";
-    src: url(../fonts/Montserrat-ExtraLight.ttf);
-}
+  font-family: "Extralight";
+  src: url(../fonts/Montserrat-ExtraLight.ttf); }
 
 @font-face {
-    font-family: "Light";
-    src: url(../fonts/Montserrat-Light.ttf);
-}
+  font-family: "Light";
+  src: url(../fonts/Montserrat-Light.ttf); }
 
 @font-face {
-    font-family: "MonserratRegular";
-    src: url(../fonts/Montserrat-Regular.ttf);
-}
+  font-family: "MonserratRegular";
+  src: url(../fonts/Montserrat-Regular.ttf); }
 
 /* FIN FUENTES */
+/* -----------EDITANDO BOOTSTRAP--------- */
+.navbar-toggler {
+  background-color: whitesmoke; }
 
+.dropdown-menu {
+  background-color: #575555 !important;
+  border: 1px solid whitesmoke !important; }
 
+.menu a {
+  color: white !important; }
 
+.navbar-collapse {
+  flex-grow: 0 !important; }
+
+ul {
+  text-align: center; }
+
+.form-check-input {
+  margin-left: 37% !important;
+  margin-right: 8px !important; }
+
+.form-check-label {
+  text-align: left !important; }
+
+/* -----------FIN EDITANDO BOOTSTRAP--------- */
 /* Comienzo estilos H1 y header */
-
 header {
-    background-image: url(../img/FondoHeader.jpg);
-    background-size: cover;
-    padding: 5px;
-    margin-bottom: 20px;
-}
+  background-image: url(../img/FondoHeader.jpg);
+  background-size: cover;
+  padding: 5px;
+  margin-bottom: 20px; }
 
 .logo {
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-}
+  padding: 10px;
+  width: 50px;
+  height: 50px; }
 
 .LogoUser {
-    display: flex;
-    justify-content: space-between;
-}
+  display: flex;
+  justify-content: space-between; }
 
 h1 {
-    text-align: center;
-    color: black;
-    font-family: "MonserratRegular";
-    font-style: italic;
-    font-size: 25px;
-}
+  text-align: center;
+  color: black;
+  font-family: "MonserratRegular";
+  font-style: italic;
+  font-size: 25px; }
 
 header h2 {
-    text-align: center;
-    color: white;
-    font-family: "Light";
-    font-style: italic;
-    font-size: 25px;
-    margin-bottom: 10px;
-    animation-duration: 3s;
-    animation-name: slidein;
-}
+  text-align: center;
+  color: white;
+  font-family: "Light";
+  font-style: italic;
+  font-size: 25px;
+  margin-bottom: 10px;
+  animation-duration: 3s;
+  animation-name: slidein; }
 
 header h3 {
-    text-align: center;
-    color: whitesmoke;
-    font-family: "Light";
-    font-style: italic;
-    font-size: 18px;
-    margin-bottom: 10px;
-    animation-duration: 3s;
-    animation-name: slidein;
-}
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Light";
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 10px;
+  animation-duration: 3s;
+  animation-name: slidein; }
 
 @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin: center;
-        width: 100%;
-    }
-}
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin: center;
+    width: 100%; } }
 
 .usuario {
-    display: flex;
-    color: white;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-.usuario a {
+  display: flex;
+  color: white;
+  margin-top: 5px;
+  margin-right: 5px; }
+  .usuario a {
     color: white;
     text-decoration: none;
     font-family: "RobotoRegular";
     font-style: italic;
     font-size: 14px;
-    padding: 5px;
-}
-
-.usuario a:hover {
+    padding: 5px; }
+  .usuario a:hover {
     text-decoration: underline;
-    padding: 5px;
-}
-
-
-
-/* -----------EDITANDO BOOTSTRAP--------- */
-.navbar-toggler {
-    background-color: whitesmoke;
-}
-
-.dropdown-menu {
-    background-color: rgb(87, 85, 85) !important;
-    border: 1px solid whitesmoke !important;
-}
-
-.menu a {
-    color: white !important;
-}
-
-.navbar-collapse {
-    flex-grow: 0 !important;
-}
-
-ul {
-    text-align: center;
-}
-
-.form-check-input {
-    margin-left: 37% !important;
-    margin-right: 8px !important;
-}
-
-.form-check-label {
-text-align: left !important;
-
-}
-
-/* -----------FIN EDITANDO BOOTSTRAP--------- */
-
-
-
-
-/* BARRA DE NAVEGACION SIN BOOTSTRAP */
-/* ul {
-    text-align: center;
-} */
-
-/* .menu li {
-    list-style: none;
-    display: inline;
-    text-align: center;
-} */
-
-/* .menu a {
-    text-decoration: none;
-    color: white;
-    padding: 3px;
-    font-family: "RobotoRegular";
-    font-size: 25px;
-    text-align: center;
-}
- */
-/* BARRA DE NAVEGACION SIN BOOTSTRAP */
-
-
-
-
+    padding: 5px; }
 
 .menu a:hover {
-    background-color: #E2EB98;
-    color: black !important;
-    padding: 3px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px 0px black
-}
+  background-color: #E2EB98;
+  color: black !important;
+  padding: 3px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0px black; }
 
 /* Estilos HTML Registro */
-
 .registroCompra {
-    display: block;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    font-family: "RobotoRegular";
-    min-height: 70vh;
-}
-
-.registroCompra h2 {
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: "RobotoRegular";
+  min-height: 70vh; }
+  .registroCompra h2 {
     text-align: center;
     font-style: italic;
     margin-top: 30px;
     margin-bottom: 30px;
     animation-duration: 3s;
-    animation-name: slidein;
-}
+    animation-name: slidein; }
 
 .botonCompra {
-    border-radius: 10px;
-    font-family: "RobotoRegular";
-    font-size: 16px;
-    background-color: cornflowerblue;
-    color: white;
-    border-color: cornflowerblue;
-    padding: 10px 30px;
-    margin: 1.2em auto;
-}
+  border-radius: 10px;
+  font-family: "RobotoRegular";
+  font-size: 16px;
+  background-color: cornflowerblue;
+  color: white;
+  border-color: cornflowerblue;
+  padding: 10px 30px;
+  margin: 1.2em auto; }
 
 /* FIN Estilos HTML Registro */
-
-/* Fin estilos H1 y header */
-
+/* FIN estilos H1 y header */
 /* Estilos cuerpo del index */
 body {
-    background-color: white;
-}
-
+  background-color: white; }
 
 .home {
-    font-family: "Light";
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.home h2 {
-    font-size: 18px;
-}
-
-.home h3 {
-    font-size: 15px;
-}
+  font-family: "Light";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .home h2 {
+    font-size: 18px; }
+  .home h3 {
+    font-size: 15px; }
 
 .texto {
-    background: linear-gradient(70deg, #E2EB98, white);
-    color: black;
-    text-align: center;
-    font-style: italic;
-    padding: 2%;
-    font-size: 15px;
-    margin: 20px 10px;
-    border: black solid 2px;
-    border-radius: 15px;
-}
+  background: linear-gradient(70deg, #E2EB98, white);
+  color: black;
+  text-align: center;
+  font-style: italic;
+  padding: 2%;
+  font-size: 15px;
+  margin: 20px 10px;
+  border: black solid 2px;
+  border-radius: 15px; }
 
 .imgNosotros {
-    box-shadow: 2px 2px 1px;
-    border-left: 1px solid gray;
-    border-top: 1px solid gray;
-    max-width: 95%;
-    max-height: 95%;
-    padding: 10px;
-    margin: 35px auto;
-}
+  box-shadow: 2px 2px 1px;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  max-width: 95%;
+  max-height: 95%;
+  padding: 10px;
+  margin: 35px auto; }
 
 .video {
-    max-width: 95%;
-    max-height: 95%;
-    padding: 10px;
-    margin: auto;
-}
+  max-width: 95%;
+  max-height: 95%;
+  padding: 10px;
+  margin: auto; }
 
 /* FIN estilos cuerpo del index */
-
 /* GRIDS INDEX*/
 .gridContainerH {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 1fr auto 1fr;
-    grid-template-areas: "header"
-        "div"
-        "footer";
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat 1fr auto 1fr;
+  grid-template-areas: "header" "div" "footer"; }
 
 header {
-    grid-area: header;
-}
+  grid-area: header; }
 
 .gridHome {
-    grid-area: div;
-}
+  grid-area: div; }
 
 footer {
-    grid-area: footer;
-}
+  grid-area: footer; }
 
 /* FIN GRIDS INDEX */
-
-
-/* Estilos HTML Cursos */
-.cursos {
+/* Estilos footer */
+footer h2 {
+  font-size: 18px;
+  font-family: "RobotoRegular";
+  text-align: center;
+  padding: 10px; }
+  footer h2 h3 {
+    font-size: 18px;
     font-family: "RobotoRegular";
     text-align: center;
-    background-size: 100%;
-}
+    margin-top: 20px; }
+  footer h2 a img:hover {
+    transform: scale(1.15);
+    box-shadow: 10px 10px 10px 0px cornflowerblue; }
 
-.CursosImg {
-    box-shadow: 2px 2px 1px;
-    border-left: 1px solid gray;
-    border-top: 1px solid gray;
-    width: 95%;
-    height: auto;
-    padding: 10px;
-    margin: auto;
-    margin-bottom: 20px;
-    min-height: 50px;
-    min-width: 50%;
-}
+.iconos {
+  display: flex;
+  justify-content: space-around; }
 
-.cursos h2 {
-    margin-bottom: 20px;
-}
-
-.CursoInfo h3 {
-    color: blueviolet;
-}
-
-.CursoInfo h5 {
-    font-size: 15px;
-    margin: 5px;
-}
-
+/* FIN Estilos footer */
+/* Estilos HTML Cursos */
 .fondo {
-    height: 100vh;
-}
+  height: 100vh; }
 
-.imgCursos {
-    width: 100%;
-    height: 70%;
-    background-size: cover;
-}
-
-
-.cursos a {
+.cursos {
+  font-family: "RobotoRegular";
+  text-align: center;
+  background-size: 100%; }
+  .cursos h2 {
+    margin-bottom: 20px; }
+  .cursos a {
     font-family: "RobotoRegular";
     text-align: center;
     color: red;
     width: 100%;
     margin-bottom: 0.5em;
-    display: block;
-}
+    display: block; }
+
+.CursosImg {
+  box-shadow: 2px 2px 1px;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  width: 95%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  min-height: 50px;
+  min-width: 50%; }
+
+.CursoInfo h3 {
+  color: blueviolet; }
+  .CursoInfo h3 h5 {
+    font-size: 15px;
+    margin: 5px; }
+
+.imgCursos {
+  width: 100%;
+  height: 70%;
+  background-size: cover; }
 
 #Comprar {
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: "RobotoRegular";
-    font-size: 16px;
-    background-color: cornflowerblue;
-    color: white;
-    border-color: cornflowerblue;
-    padding: 10px 10px;
-    margin: 0.5em auto;
-    width: 50%;
-    margin: auto;
-}
-
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "RobotoRegular";
+  font-size: 16px;
+  background-color: cornflowerblue;
+  color: white;
+  border-color: cornflowerblue;
+  padding: 10px 10px;
+  margin: 0.5em auto;
+  width: 50%;
+  margin: auto; }
 
 /* GRIDS Cursos */
 .gridContainerC {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto 1fr;
-    grid-template-areas: "header"
-        "cursos"
-        "footer";
-}
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-areas: "header" "cursos" "footer"; }
 
 header {
-    grid-area: header;
-}
+  grid-area: header; }
 
 .gridCursos {
-    grid-area: cursos;
-}
+  grid-area: cursos; }
 
 footer {
-    grid-area: footer;
-}
+  grid-area: footer; }
 
 /* FIN GRIDS Cursos */
-
 /* FIN Estilos HTML Cursos */
-
-
-
 /* Estilos HTML Alumnos */
 .gridContainerA {
-    background-image: url("../img/fondo.jpg");
-    background-size: cover;
-}
+  background-image: url("../img/fondo.jpg");
+  background-size: cover; }
 
 .Alumnos h3 {
-    font-family: "Light";
-    color:black;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.Alumnos p {
-    background: linear-gradient(70deg, rgb(152, 207, 209), rgb(50, 141, 146));
+  font-family: "Light";
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+  .Alumnos h3 p {
+    background: linear-gradient(70deg, #98cfd1, #328d92);
     color: black;
     text-align: center;
     font-family: "Light";
@@ -421,33 +320,18 @@ footer {
     font-size: 15px;
     margin: 20px 10px;
     /* border: black solid 2px; */
-    border-radius: 15px;
-}
+    border-radius: 15px; }
 
 /* FIN Estilos HTML Alumnos */
-
-
 /* Estilos HTML Nosotros */
 .quienesSomos h2 {
-    font-family: "Light";
-    text-align: center;
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.headerNosotros h3 {
-    text-align: center;
-    color: white;
-    font-family: "Light";
-    font-style: italic;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-
-.quienesSomos p {
-    background-color: rgb(238, 175, 153) !important;
+  font-family: "Light";
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .quienesSomos h2 p {
+    background-color: #eeaf99 !important;
     color: black;
     text-align: center;
     font-family: "Light";
@@ -455,160 +339,100 @@ footer {
     font-size: 15px;
     margin: 20px 10px;
     border: black solid 2px;
-    border-radius: 15px !important;
-}
+    border-radius: 15px !important; }
+
+.headerNosotros h3 {
+  text-align: center;
+  color: white;
+  font-family: "Light";
+  font-style: italic;
+  font-size: 25px;
+  margin-bottom: 10px; }
 
 .botonNuestros {
-    border-radius: 10px;
-    font-family: "RobotoRegular";
-    font-size: 16px;
-    background-color: cornflowerblue;
-    color: white;
-    border-color: cornflowerblue;
-    padding: 10px 10px;
-    width: 40%;
-    margin: auto;
-    margin-bottom: 20px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
+  border-radius: 10px;
+  font-family: "RobotoRegular";
+  font-size: 16px;
+  background-color: cornflowerblue;
+  color: white;
+  border-color: cornflowerblue;
+  padding: 10px 10px;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none; }
 
 /* FIN Estilos HTML Nosotros */
-
-
 /* Estilos HTML Contacto */
-
-
-.contacto h2 {
+.contacto {
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: "RobotoRegular";
+  min-height: 70vh; }
+  .contacto h2 {
     text-align: center;
     font-style: italic;
     margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-
-.contacto {
-    display: block;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    font-family: "RobotoRegular";
-    min-height: 70vh;
-}
+    margin-bottom: 30px; }
+  .contacto textarea {
+    resize: none;
+    border-radius: 5px;
+    margin: 0, auto; }
 
 .contact label,
 .contact a {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 0.1em;
-    display: block;
-}
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.1em;
+  display: block; }
+  .contact label p,
+  .contact a p {
+    margin-top: 20px;
+    margin-bottom: 15px; }
 
 .inputC {
-    border-radius: 10px;
-    border-color: black;
-    text-align: center;
-    width: 200px;
-    height: 25px;
-    margin-bottom: 1.2em;
-}
-
-.contact p {
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-.contacto textarea {
-    resize: none;
-    border-radius: 5px;
-    margin: 0, auto;
-
-}
+  border-radius: 10px;
+  border-color: black;
+  text-align: center;
+  width: 200px;
+  height: 25px;
+  margin-bottom: 1.2em; }
 
 .Enviar {
-    border-radius: 10px;
-    font-family: "RobotoRegular";
-    font-size: 16px;
-    background-color: cornflowerblue;
-    color: white;
-    border-color: cornflowerblue;
-    padding: 10px 30px;
-    margin: 1.2em auto;
-}
-
-
-
-
+  border-radius: 10px;
+  font-family: "RobotoRegular";
+  font-size: 16px;
+  background-color: cornflowerblue;
+  color: white;
+  border-color: cornflowerblue;
+  padding: 10px 30px;
+  margin: 1.2em auto; }
 
 /* FIN Estilos HTML Contacto */
-
-/* Estilos footer */
-footer h2 {
-    font-size: 18px;
-    font-family: "RobotoRegular";
-    text-align: center;
-    padding: 10px;
-}
-
-
-footer h3 {
-    font-size: 18px;
-    font-family: "RobotoRegular";
-    text-align: center;
-    margin-top: 20px;
-
-}
-
-.iconos {
-    display: flex;
-    justify-content: space-around;
-
-}
-
-footer a img:hover {
-    transform: scale(1.15);
-    box-shadow: 10px 10px 10px 0px cornflowerblue
-}
-
-/* FIN Estilos footer */
-
-
-
-
-
-
-
-
-
-
-/* Media Queries */
-
-@media screen and (min-width:768px) {
-
-    /* Media Queries HOME */
-    /* HEADER */
-    .gridContainerH .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .gridContainerH header h3 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .gridContainerH .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    /* MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-    /*  .gridContainerH .menu li {
+/* ------------------ MEDIA QUERIES -------------- */
+@media screen and (min-width: 768px) {
+  /* Media Queries HOME */
+  /* HEADER */
+  .gridContainerH .logo {
+    width: 80px;
+    height: 80px; }
+  .gridContainerH header h3 {
+    font-size: 40px;
+    margin-bottom: 60px; }
+  .gridContainerH .menu a {
+    padding: 8px;
+    font-size: 20px; }
+  .gridContainerH .usuario a {
+    font-size: 25px; }
+  /* MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
+  /*  .gridContainerH .menu li {
         text-align: right;
     } */
-
-    /*  .gridContainerH ul {
+  /*  .gridContainerH ul {
         text-align: right;
         margin-bottom: 10px;
     }
@@ -616,602 +440,41 @@ footer a img:hover {
     .gridContainerH .menu a:hover {
         padding: 8px;
     } */
-    /* FIN MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-
-    .gridContainerH .usuario a {
-        font-size: 25px;
-    }
-
-    /* FIN HEADER */
-    /* DIV */
-    .gridContainerH .home h2 {
-        font-size: 35px;
-        margin: 30px;
-    }
-
-    .gridContainerH .home h3 {
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-
-    .gridContainerH .texto {
-        padding: 2%;
-        font-size: 30px;
-        margin: 20px 150px;
-    }
-
-    .gridContainerH .imgNosotros {
-        max-width: 50%;
-        max-height: 50%;
-        margin: 50px auto;
-    }
-
-    .gridContainerH .video {
-        width: 800px;
-        height: 500px;
-        margin-bottom: 50px;
-    }
-
-    /* FIN DIV */
-    /* FOOTER */
-    .gridContainerH footer h2 {
-        font-size: 20px;
-        text-align: left;
-        padding: 15px;
-    }
-
-    .gridContainerH footer h3 {
-        font-size: 20px;
-        text-align: right;
-        margin: 0 10px 5px 0;
-
-    }
-
-    .gridContainerH .iconos {
-        justify-content: flex-start;
-
-    }
-
-    .gridContainerH .iconos a {
-        margin-left: 20px;
-        margin-right: 15px;
-    }
-
-    /* FIN FOOTER */
-    /* FIN Media Queries HOME */
-
-    /* CURSOS */
-    /* HEADER */
-    .gridContainerC .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .gridContainerC header h2 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .gridContainerC .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    /* MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-    /* .gridContainerC .menu li {
-        text-align: right;
-    }
-
-    .gridContainerC ul {
-        text-align: right;
-        margin-bottom: 10px;
-    }
-
-    .gridContainerC .menu a:hover {
-        padding: 8px;
-    } */
-/* FIN MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-
-    .gridContainerC .usuario a {
-        font-size: 25px;
-    }
-
-    /* FIN HEADER */
-    /* DIV */
-    .gridContainerC .CursosImg {
-        box-shadow: 2px 2px 1px;
-        border-left: 1px solid gray;
-        border-top: 1px solid gray;
-        width: 29%;
-        height: auto;
-        padding: 10px;
-        margin: 10px;
-        /* margin-bottom: 20px; */
-        min-height: 10px;
-        min-width: 10%;
-        display: inline-block;
-        margin-bottom: 50px;
-    }
-
-    .gridContainerC .CursoInfo h3 {
-        font-size: 15px;
-    }
-
-    .gridContainerC {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 4fr 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        grid-template-areas:
-            "header header header"
-            "cursos cursos cursos"
-            "footer footer footer";
-    }
-
-    .gridContainerC header {
-        grid-area: header;
-    }
-
-    .gridContainerC .gridCursos {
-        grid-area: cursos;
-    }
-
-    .gridContainerC footer {
-        grid-area: footer;
-    }
-
-    /* FIN DIV */
-
-    /* FOOTER */
-    .gridContainerC footer h2 {
-        font-size: 20px;
-        text-align: left;
-        padding: 20px;
-    }
-
-    .gridContainerC footer h3 {
-        font-size: 20px;
-        text-align: right;
-        margin: 0 10px 5px 0;
-
-    }
-
-    .gridContainerC .iconos {
-        justify-content: flex-start;
-
-    }
-
-    .gridContainerC .iconos a {
-        margin-left: 20px;
-        margin-right: 15px;
-    }
-
-    /* FIN FOOTER */
-    /* FIN Media Queries CURSOS */
-
-    /* Media Queries ALUMNOS */
-    /* HEADER */
-    .gridContainerA .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .gridContainerA header h3 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .gridContainerA .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    /* MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-   /*  .gridContainerA .menu li {
-        text-align: right;
-    }
-
-    .gridContainerA ul {
-        text-align: right;
-        margin-bottom: 10px;
-    }
-
-    .gridContainerA .menu a:hover {
-        padding: 8px;
-    } */
-/* FIN MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-
-    .gridContainerA .usuario a {
-        font-size: 25px;
-    }
-
-    /* FIN HEADER */
-
-    /* DIV */
-
-    .gridContainerA .Nair p {
-        font-size: 20px;
-        margin: 20px 40% 20px 20px;
-    }
-
-    .gridContainerA .Nair h3 {
-        text-align: left;
-        margin-left: 3%;
-    }
-
-    .gridContainerA .Melisa p {
-        font-size: 20px;
-        margin: 20px 20px 20px 40%;
-    }
-
-    .gridContainerA .Melisa h3 {
-        text-align: right;
-        margin-right: 3%;
-    }
-
-    .gridContainerA .Eneas p {
-        font-size: 20px;
-        margin: 20px 40% 20px 20px;
-    }
-
-    .gridContainerA .Eneas h3 {
-        text-align: left;
-        margin-left: 3%;
-    }
-
-    .gridContainerA .Ariadna p {
-        font-size: 20px;
-        margin: 20px 20px 20px 40%;
-    }
-
-    .gridContainerA .Ariadna h3 {
-        text-align: right;
-        margin-right: 3%;
-    }
-
-    .gridContainerA .Francisco p {
-        font-size: 20px;
-        margin: 20px 40% 20px 20px;
-    }
-
-    .gridContainerA .Francisco h3 {
-        text-align: left;
-        margin-left: 3%;
-    }
-
-    /* FIN DIV */
-
-    /* FOOTER */
-    .gridContainerA footer h2 {
-        font-size: 20px;
-        text-align: left;
-        padding: 15px;
-    }
-
-    .gridContainerA footer h3 {
-        font-size: 20px;
-        text-align: right;
-        margin: 0 10px 5px 0;
-
-    }
-
-    .gridContainerA .iconos {
-        justify-content: flex-start;
-
-    }
-
-    .gridContainerA .iconos a {
-        margin-left: 20px;
-        margin-right: 15px;
-    }
-
-    /* FIN FOOTER */
-    /* FIN Media Queries ALUMNOS */
-
-    /* Media Queries Nosotros */
-
-    /* HEADER */
-    .Nosotros {
-        background-image: url("../img/fondonosotros.jpg");
-        background-size: cover;
-
-    }
-
-    .headerNosotros .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .headerNosotros h3 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .headerNosotros .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    /* MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-   /*  .headerNosotros .menu li {
-        text-align: right;
-    }
-
-    .headerNosotros ul {
-        text-align: right;
-        margin-bottom: 10px;
-    }
-
-    .headerNosotros .menu a:hover {
-        padding: 8px;
-    } */
-/* FIN MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-
-    .headerNosotros .usuario a {
-        font-size: 25px;
-    }
-
-    /* FIN HEADER */
-
-    /* DIV */
-    .quienesSomos h2 {
-        background-color: transparent !important;
-        color: white !important;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        font-size: 35px;
-    }
-
-    .quienesSomos p {
-        background-color: transparent !important;
-        color: white;
-        text-align: left center;
-        font-size: 28px;
-        margin: 20px 55% 20px 10%;
-        border: darkgrey solid 2px;
-    }
-
-    .botonNuestros {
-        font-size: 18px;
-        width: 10%;
-        margin-left: 23%;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    /* FIN DIV */
-
-    /* FOOTER */
-    .Nosotros footer h2 {
-        color: white;
-        font-family: "Extralight";
-        font-size: 20px;
-        text-align: left;
-        padding: 15px;
-    }
-
-    .Nosotros footer h3 {
-        color: white;
-        font-family: "Extralight";
-        font-size: 20px;
-        text-align: right;
-        margin: 0 10px 5px 0;
-
-    }
-
-    .Nosotros .iconos {
-        justify-content: flex-start;
-
-    }
-
-    .Nosotros .iconos a {
-        margin-left: 20px;
-        margin-right: 25px;
-    }
-
-    .contactoC {
-        display: flex;
-        justify-content: center;
-    }
-
-    .contactoA {
-        width: 400px;
-        display: block;
-    }
-
-    /* FIN FOOTER */
-
-    /* FIN Queries Nosotros */
-
-    /* Media Queries Contacto */
-
-    /* HEADER */
-
-    .headerContacto .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .headerContacto h2 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .headerContacto .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    /* MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-    /* .headerContacto .menu li {
-        text-align: right;
-    }
-
-    .headerContacto ul {
-        text-align: right;
-        margin-bottom: 10px;
-    }
-
-    .headerContacto .menu a:hover {
-        padding: 8px;
-    } */
-/* FIN MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-
-    .headerContacto .usuario a {
-        font-size: 25px;
-    }
-
-    /* FIN HEADER */
-
-    /* DIV */
-
-    /* FIN DIV */
-
-    /* FOOOTER */
-    .pagContacto footer h2 {
-        font-size: 20px;
-        text-align: left;
-        padding: 15px;
-    }
-
-    .pagContacto footer h3 {
-        font-size: 20px;
-        text-align: right;
-        margin: 0 10px 5px 0;
-
-    }
-
-    .pagContacto .iconos {
-        justify-content: flex-start;
-
-    }
-
-    .pagContacto .iconos a {
-        margin-left: 20px;
-        margin-right: 15px;
-    }
-
-    /* FIN FOOTER */
-    /* FIN Queries Contacto */
-
-    /* Media Queries Registro/inscrpcion */
-    /* HEADER */
-    .pagRegistro .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .pagRegistro h2 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .pagRegistro .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    /* MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-   /*  .pagRegistro .menu li {
-        text-align: right;
-    }
-
-    .pagRegistro ul {
-        text-align: right;
-        margin-bottom: 10px;
-    }
-
-    .pagRegistro .menu a:hover {
-        padding: 8px;
-    } */
-/* FIN MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-
-    .pagRegistro .usuario a {
-        font-size: 25px;
-    }
-
-    .registroCompra {
-        justify-content: end;
-        align-items: end;
-        align-content: end;
-    }
-
-    .registroCompra h2 {
-        margin-bottom: 0;
-    }
-
-    .regis {
-        width: 40%;
-        margin-left: 60%;
-    }
-
-    /* FIN HEADER */
-
-    /* DIV */
-    .pagRegistro {
-        background-image: url("../img/fondoinscrpcion.png");
-        background-size: cover;
-    }
-
-    .registroCompra h2 {
-        display: flex;
-        color: white;
-        font-size: 60px;
-        margin-top: 3%;
-        margin-left: 3%;
-    }
-
-    .inputC {
-        font-size: 18px;
-        border-color: black;
-        width: 250px;
-        height: 30px;
-    }
-
-    .registroCompra label {
-        font-size: 25px;
-        color: white;
-    }
-
-    /* FIN DIV */
-
-    /* FOOOTER */
-
-    .pagRegistro footer h2 {
-        color: white;
-        font-family: "Extralight";
-        font-size: 20px;
-        text-align: left;
-        padding: 15px;
-        margin-bottom: 5px;
-    }
-
-    .pagRegistro footer h3 {
-        color: white;
-        font-family: "Extralight";
-        font-size: 20px;
-        text-align: right;
-        margin: 0 10px 5px 0;
-
-    }
-
-    .pagRegistro .iconos {
-        justify-content: flex-start;
-
-    }
-
-    .pagRegistro .iconos a {
-        margin-left: 20px;
-        margin-right: 15px;
-    }
-
-    /* FIN FOOTER */
-
-
-
-
-
-}
-
-/* FIN Medias Queries */
+  /* FIN MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
+  /* FIN HEADER */
+  /* DIV */
+  .gridContainerH .home h2 {
+    font-size: 35px;
+    margin: 30px; }
+  .gridContainerH .home h3 {
+    font-size: 30px;
+    margin-bottom: 25px; }
+  .gridContainerH .texto {
+    padding: 2%;
+    font-size: 30px;
+    margin: 20px 150px; }
+  .gridContainerH .imgNosotros {
+    max-width: 50%;
+    max-height: 50%;
+    margin: 50px auto; }
+  .gridContainerH .video {
+    width: 800px;
+    height: 500px;
+    margin-bottom: 50px; }
+  /* FIN DIV */
+  /* FOOTER */
+  .gridContainerH footer h2 {
+    font-size: 20px;
+    text-align: left;
+    padding: 15px; }
+  .gridContainerH footer h3 {
+    font-size: 20px;
+    text-align: right;
+    margin: 0 10px 5px 0; }
+  .gridContainerH .iconos {
+    justify-content: flex-start; }
+  .gridContainerH .iconos a {
+    margin-left: 20px;
+    margin-right: 15px; }
+  /* FIN FOOTER */
+  /* FIN Media Queries HOME */ }

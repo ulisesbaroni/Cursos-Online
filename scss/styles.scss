@@ -55,7 +55,7 @@ ul {
 }
 
 .form-check-label {
-text-align: left !important;
+    text-align: left !important;
 
 }
 
@@ -140,10 +140,10 @@ header h3 {
         padding: 5px;
     }
 
-        a:hover {
-            text-decoration: underline;
-            padding: 5px;
-        }
+    a:hover {
+        text-decoration: underline;
+        padding: 5px;
+    }
 }
 
 .menu a:hover {
@@ -268,12 +268,12 @@ footer {
 /* FIN GRIDS INDEX */
 
 /* Estilos footer */
-footer{
+footer {
     h2 {
-    font-size: 18px;
-    font-family: "RobotoRegular";
-    text-align: center;
-    padding: 10px;
+        font-size: 18px;
+        font-family: "RobotoRegular";
+        text-align: center;
+        padding: 10px;
     }
 
     h3 {
@@ -399,11 +399,11 @@ footer {
 
 .Alumnos {
     h3 {
-    font-family: "Light";
-    color:black;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+        font-family: "Light";
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     p {
@@ -425,11 +425,11 @@ footer {
 /* Estilos HTML Nosotros */
 .quienesSomos {
     h2 {
-    font-family: "Light";
-    text-align: center;
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+        font-family: "Light";
+        text-align: center;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     p {
@@ -578,64 +578,66 @@ footer {
     /* DIV */
     .gridContainerH .home {
         h2 {
-        font-size: 35px;
-        margin: 30px;
+            font-size: 35px;
+            margin: 30px;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .texto {
+            padding: 2%;
+            font-size: 30px;
+            margin: 20px 150px;
+        }
+
+        .imgNosotros {
+            max-width: 50%;
+            max-height: 50%;
+            margin: 50px auto;
+        }
+
+        .video {
+            width: 800px;
+            height: 500px;
+            margin-bottom: 50px;
+        }
+
     }
 
-    h3 {
-        font-size: 30px;
-        margin-bottom: 25px;
-    }
-
-    .texto {
-        padding: 2%;
-        font-size: 30px;
-        margin: 20px 150px;
-    }
-
-    .imgNosotros {
-        max-width: 50%;
-        max-height: 50%;
-        margin: 50px auto;
-    }
-
-    .video {
-        width: 800px;
-        height: 500px;
-        margin-bottom: 50px;
-    }
-
-}
     /* FIN DIV */
-    
+
     /* FOOTER */
-    .gridContainerH { 
+    .gridContainerH {
         footer h2 {
-        font-size: 20px;
-        text-align: left;
-        padding: 15px;
+            font-size: 20px;
+            text-align: left;
+            padding: 15px;
+        }
+
+        footer h3 {
+            font-size: 20px;
+            text-align: right;
+            margin: 0 10px 5px 0;
+        }
+
+        .iconos {
+            justify-content: flex-start;
+        }
+
+        .iconos a {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
     }
 
-    footer h3 {
-        font-size: 20px;
-        text-align: right;
-        margin: 0 10px 5px 0;
-    }
-
-    .iconos {
-        justify-content: flex-start;
-    }
-
-    .iconos a {
-        margin-left: 20px;
-        margin-right: 15px;
-    }
-
-    }
     /* FIN FOOTER */
     /* FIN Media Queries HOME */
 
-/* CURSOS */
+    /* CURSOS */
     /* HEADER */
     .gridContainerC {
         display: grid;
@@ -648,84 +650,84 @@ footer {
             "cursos cursos cursos"
             "footer footer footer";
 
-    .logo {
-        width: 80px;
-        height: 80px;
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        header h2 {
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
+
+        .menu a {
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        .usuario a {
+            font-size: 25px;
+        }
+
+        /* FIN HEADER */
+        /* DIV */
+        .CursosImg {
+            box-shadow: 2px 2px 1px;
+            border-left: 1px solid gray;
+            border-top: 1px solid gray;
+            width: 29%;
+            height: auto;
+            padding: 10px;
+            margin: 10px;
+            /* margin-bottom: 20px; */
+            min-height: 10px;
+            min-width: 10%;
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+
+        .CursoInfo h3 {
+            font-size: 15px;
+        }
+
+
+        header {
+            grid-area: header;
+        }
+
+        .gridCursos {
+            grid-area: cursos;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        /* FIN DIV */
+
+        /* FOOTER */
+        footer h2 {
+            font-size: 20px;
+            text-align: left;
+            padding: 20px;
+        }
+
+        footer h3 {
+            font-size: 20px;
+            text-align: right;
+            margin: 0 10px 5px 0;
+        }
+
+        .iconos {
+            justify-content: flex-start;
+        }
+
+        .iconos a {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
     }
-
-    header h2 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    .usuario a {
-        font-size: 25px;
-    }
-
-    /* FIN HEADER */
-    /* DIV */
-    .CursosImg {
-        box-shadow: 2px 2px 1px;
-        border-left: 1px solid gray;
-        border-top: 1px solid gray;
-        width: 29%;
-        height: auto;
-        padding: 10px;
-        margin: 10px;
-        /* margin-bottom: 20px; */
-        min-height: 10px;
-        min-width: 10%;
-        display: inline-block;
-        margin-bottom: 50px;
-    }
-
-    .CursoInfo h3 {
-        font-size: 15px;
-    }
-
-
-    header {
-        grid-area: header;
-    }
-
-    .gridCursos {
-        grid-area: cursos;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
-    /* FIN DIV */
-
-    /* FOOTER */
-    footer h2 {
-        font-size: 20px;
-        text-align: left;
-        padding: 20px;
-    }
-
-    footer h3 {
-        font-size: 20px;
-        text-align: right;
-        margin: 0 10px 5px 0;
-    }
-
-    .iconos {
-        justify-content: flex-start;
-    }
-
-    .iconos a {
-        margin-left: 20px;
-        margin-right: 15px;
-    }
-
-}
 
     /* FIN FOOTER */
     /* FIN Media Queries CURSOS */
@@ -734,363 +736,365 @@ footer {
     /* Media Queries ALUMNOS */
     /* HEADER */
     .gridContainerA {
-    .logo {
-        width: 80px;
-        height: 80px;
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        header h3 {
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
+
+        .menu a {
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        .usuario a {
+            font-size: 25px;
+        }
+
+        /* FIN HEADER */
+
+        /* DIV */
+
+        .Nair p {
+            font-size: 20px;
+            margin: 20px 40% 20px 20px;
+        }
+
+        .Nair h3 {
+            text-align: left;
+            margin-left: 3%;
+        }
+
+        .Melisa p {
+            font-size: 20px;
+            margin: 20px 20px 20px 40%;
+        }
+
+        .Melisa h3 {
+            text-align: right;
+            margin-right: 3%;
+        }
+
+        .Eneas p {
+            font-size: 20px;
+            margin: 20px 40% 20px 20px;
+        }
+
+        .Eneas h3 {
+            text-align: left;
+            margin-left: 3%;
+        }
+
+        .Ariadna p {
+            font-size: 20px;
+            margin: 20px 20px 20px 40%;
+        }
+
+        .Ariadna h3 {
+            text-align: right;
+            margin-right: 3%;
+        }
+
+        .Francisco p {
+            font-size: 20px;
+            margin: 20px 40% 20px 20px;
+        }
+
+        .Francisco h3 {
+            text-align: left;
+            margin-left: 3%;
+        }
+
+        /* FIN DIV */
+
+        /* FOOTER */
+        footer h2 {
+            font-size: 20px;
+            text-align: left;
+            padding: 15px;
+        }
+
+        footer h3 {
+            font-size: 20px;
+            text-align: right;
+            margin: 0 10px 5px 0;
+
+        }
+
+        .iconos {
+            justify-content: flex-start;
+
+        }
+
+        .iconos a {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
     }
 
-    header h3 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    .usuario a {
-        font-size: 25px;
-    }
-
-    /* FIN HEADER */
-
-    /* DIV */
-
-    .Nair p {
-        font-size: 20px;
-        margin: 20px 40% 20px 20px;
-    }
-
-    .Nair h3 {
-        text-align: left;
-        margin-left: 3%;
-    }
-
-    .Melisa p {
-        font-size: 20px;
-        margin: 20px 20px 20px 40%;
-    }
-
-    .Melisa h3 {
-        text-align: right;
-        margin-right: 3%;
-    }
-
-    .Eneas p {
-        font-size: 20px;
-        margin: 20px 40% 20px 20px;
-    }
-
-    .Eneas h3 {
-        text-align: left;
-        margin-left: 3%;
-    }
-
-    .Ariadna p {
-        font-size: 20px;
-        margin: 20px 20px 20px 40%;
-    }
-
-    .Ariadna h3 {
-        text-align: right;
-        margin-right: 3%;
-    }
-
-    .Francisco p {
-        font-size: 20px;
-        margin: 20px 40% 20px 20px;
-    }
-
-    .Francisco h3 {
-        text-align: left;
-        margin-left: 3%;
-    }
-
-    /* FIN DIV */
-
-    /* FOOTER */
-    footer h2 {
-        font-size: 20px;
-        text-align: left;
-        padding: 15px;
-    }
-
-    footer h3 {
-        font-size: 20px;
-        text-align: right;
-        margin: 0 10px 5px 0;
-
-    }
-
-    .iconos {
-        justify-content: flex-start;
-
-    }
-
-    .iconos a {
-        margin-left: 20px;
-        margin-right: 15px;
-    }
-}
     /* FIN FOOTER */
     /* FIN Media Queries ALUMNOS */
 
     /* Media Queries Nosotros */
 
     /* HEADER */
+    .headerNosotros {
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        h3 {
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
+
+        .menu a {
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        .usuario a {
+            font-size: 25px;
+        }
+    }
+
+    /* FIN HEADER */
+
+    /* DIV */
+    .quienesSomos {
+        h2 {
+            background-color: transparent !important;
+            color: white !important;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 35px;
+        }
+
+        p {
+            background-color: transparent !important;
+            color: white;
+            text-align: left center;
+            font-size: 28px;
+            margin: 20px 55% 20px 10%;
+            border: darkgrey solid 2px;
+        }
+
+        .botonNuestros {
+            font-size: 18px;
+            width: 10%;
+            margin-left: 23%;
+            text-align: center;
+            text-decoration: none;
+        }
+
+    }
+
+    /* FIN DIV */
+
+    /* FOOTER */
     .Nosotros {
+        
         background-image: url("../img/fondonosotros.jpg");
         background-size: cover;
 
+        footer h2 {
+            color: white;
+            font-family: "Extralight";
+            font-size: 20px;
+            text-align: left;
+            padding: 15px;
+        }
+
+        footer h3 {
+            color: white;
+            font-family: "Extralight";
+            font-size: 20px;
+            text-align: right;
+            margin: 0 10px 5px 0;
+
+        }
+
+        .iconos {
+            justify-content: flex-start;
+
+        }
+
+        .iconos a {
+            margin-left: 20px;
+            margin-right: 25px;
+        }
+
     }
 
-    .headerNosotros {
-        .logo {
-        width: 80px;
-        height: 80px;
-    }
+    /* FIN FOOTER */
+    /* FIN Queries Nosotros */
 
-    h3 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    .usuario a {
-        font-size: 25px;
-    }
-}
-/* FIN HEADER */
-
-  /* DIV */
-  .quienesSomos {
-    h2 {
-    background-color: transparent !important;
-    color: white !important;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 35px;
-}
-
-p {
-    background-color: transparent !important;
-    color: white;
-    text-align: left center;
-    font-size: 28px;
-    margin: 20px 55% 20px 10%;
-    border: darkgrey solid 2px;
-}
-
-.botonNuestros {
-    font-size: 18px;
-    width: 10%;
-    margin-left: 23%;
-    text-align: center;
-    text-decoration: none;
-}
-
-}
-
-/* FIN DIV */
-
-/* FOOTER */
-.Nosotros {
-    footer h2 {
-    color: white;
-    font-family: "Extralight";
-    font-size: 20px;
-    text-align: left;
-    padding: 15px;
-}
-
-footer h3 {
-    color: white;
-    font-family: "Extralight";
-    font-size: 20px;
-    text-align: right;
-    margin: 0 10px 5px 0;
-
-}
-
-.iconos {
-    justify-content: flex-start;
-
-}
-
-.iconos a {
-    margin-left: 20px;
-    margin-right: 25px;
-}
-
-}
-
-/* FIN FOOTER */
-/* FIN Queries Nosotros */
-
-/* Media Queries Contacto */
+    /* Media Queries Contacto */
 
     /* HEADER */
-.pagContacto {
+    .pagContacto {
 
-    .headerContacto {
-        .logo {
-        width: 80px;
-        height: 80px;
+        .headerContacto {
+            .logo {
+                width: 80px;
+                height: 80px;
+            }
+
+            h2 {
+                font-size: 40px;
+                margin-bottom: 60px;
+            }
+
+            .menu a {
+                padding: 8px;
+                font-size: 20px;
+            }
+
+            .usuario a {
+                font-size: 25px;
+            }
+
+        }
+
+        footer h2 {
+            font-size: 20px;
+            text-align: left;
+            padding: 15px;
+        }
+
+        footer h3 {
+            font-size: 20px;
+            text-align: right;
+            margin: 0 10px 5px 0;
+
+        }
+
+        .iconos {
+            justify-content: flex-start;
+
+        }
+
+        .iconos a {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
+        .contactoC {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contactoA {
+            width: 400px;
+            display: block;
+        }
+
     }
 
-    h2 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
+    /* FIN FOOTER */
+    /* FIN Queries Contacto */
 
-    .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    .usuario a {
-        font-size: 25px;
-    }
-
-}
-
-footer h2 {
-    font-size: 20px;
-    text-align: left;
-    padding: 15px;
-}
-
-footer h3 {
-    font-size: 20px;
-    text-align: right;
-    margin: 0 10px 5px 0;
-
-}
-
-.iconos {
-    justify-content: flex-start;
-
-}
-
-.iconos a {
-    margin-left: 20px;
-    margin-right: 15px;
-}
-
-.contactoC {
-    display: flex;
-    justify-content: center;
-}
-
-.contactoA {
-    width: 400px;
-    display: block;
-}
-
-}
-
-/* FIN FOOTER */
-/* FIN Queries Contacto */
-
-/* Media Queries Registro/inscrpcion */
+    /* Media Queries Registro/inscrpcion */
     /* HEADER */
     .pagRegistro {
         background-image: url("../img/fondoinscrpcion.png");
         background-size: cover;
 
-    .logo {
-        width: 80px;
-        height: 80px;
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
+
+        .menu a {
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        .usuario a {
+            font-size: 25px;
+        }
     }
 
-    h2 {
-        font-size: 40px;
-        margin-bottom: 60px;
-    }
-
-    .menu a {
-        padding: 8px;
-        font-size: 20px;
-    }
-
-    .usuario a {
-        font-size: 25px;
-    }
-}
-/* FIN HEADER */
- /* DIV */
+    /* FIN HEADER */
+    /* DIV */
     .registroCompra {
         justify-content: end;
         align-items: end;
         align-content: end;
-    
-    h2 {
-        display: flex;
-        color: white;
-        font-size: 60px;
-        margin-top: 3%;
-        margin-left: 3%;
-        margin-bottom: 0;
+
+        h2 {
+            display: flex;
+            color: white;
+            font-size: 60px;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-bottom: 0;
+        }
+
+        .regis {
+            width: 40%;
+            margin-left: 60%;
+        }
+
+        label {
+            font-size: 25px;
+            color: white;
+        }
+
+        .inputC {
+            font-size: 18px;
+            border-color: black;
+            width: 250px;
+            height: 30px;
+        }
     }
 
-    .regis {
-        width: 40%;
-        margin-left: 60%;
+    /* FIN DIV */
+    /* FOOOTER */
+
+    .pagRegistro {
+        footer h2 {
+            color: white;
+            font-family: "Extralight";
+            font-size: 20px;
+            text-align: left;
+            padding: 15px;
+            margin-bottom: 5px;
+        }
+
+        footer h3 {
+            color: white;
+            font-family: "Extralight";
+            font-size: 20px;
+            text-align: right;
+            margin: 0 10px 5px 0;
+
+        }
+
+        .iconos {
+            justify-content: flex-start;
+
+        }
+
+        .iconos a {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
     }
 
-    label {
-        font-size: 25px;
-        color: white;
-    }
-
-    .inputC {
-        font-size: 18px;
-        border-color: black;
-        width: 250px;
-        height: 30px;
-    }
-}
-/* FIN DIV */
-/* FOOOTER */
-
-.pagRegistro {
-    footer h2 {
-    color: white;
-    font-family: "Extralight";
-    font-size: 20px;
-    text-align: left;
-    padding: 15px;
-    margin-bottom: 5px;
-}
-
-footer h3 {
-    color: white;
-    font-family: "Extralight";
-    font-size: 20px;
-    text-align: right;
-    margin: 0 10px 5px 0;
+    /* FIN FOOTER */
 
 }
 
-.iconos {
-    justify-content: flex-start;
-
-}
-
-.iconos a {
-    margin-left: 20px;
-    margin-right: 15px;
-}
-
-}
-
-/* FIN FOOTER */
-
-} /*LLAVE QUE CIERRA MEDIA QUERIES -- FIN Medias Queries */
-
-
+/*LLAVE QUE CIERRA MEDIA QUERIES -- FIN Medias Queries */

@@ -39,6 +39,14 @@
 
 .menu a {
     color: white !important;
+
+    &:hover {
+        background-color: #E2EB98;
+        color: black !important;
+        padding: 3px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px 0px black;
+    }
 }
 
 .navbar-collapse {
@@ -138,20 +146,12 @@ header h3 {
         font-style: italic;
         font-size: 14px;
         padding: 5px;
-    }
 
-    a:hover {
-        text-decoration: underline;
-        padding: 5px;
+        &:hover {
+            text-decoration: underline;
+            padding: 5px;
+        }
     }
-}
-
-.menu a:hover {
-    background-color: #E2EB98;
-    color: black !important;
-    padding: 3px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px 0px black
 }
 
 
@@ -388,7 +388,6 @@ footer {
 }
 
 /* FIN GRIDS Cursos */
-
 /* FIN Estilos HTML Cursos */
 
 /* Estilos HTML Alumnos */
@@ -423,6 +422,7 @@ footer {
 /* FIN Estilos HTML Alumnos */
 
 /* Estilos HTML Nosotros */
+
 .quienesSomos {
     h2 {
         font-family: "Light";
@@ -558,24 +558,9 @@ footer {
         font-size: 25px;
     }
 
-    /* MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-    /*  .gridContainerH .menu li {
-        text-align: right;
-    } */
-
-    /*  .gridContainerH ul {
-        text-align: right;
-        margin-bottom: 10px;
-    }
-
-    .gridContainerH .menu a:hover {
-        padding: 8px;
-    } */
-    /* FIN MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-
     /* FIN HEADER */
-
     /* DIV */
+
     .gridContainerH .home {
         h2 {
             font-size: 35px;
@@ -608,8 +593,8 @@ footer {
     }
 
     /* FIN DIV */
-
     /* FOOTER */
+
     .gridContainerH {
         footer h2 {
             font-size: 20px;
@@ -639,6 +624,7 @@ footer {
 
     /* CURSOS */
     /* HEADER */
+
     .gridContainerC {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -671,6 +657,7 @@ footer {
 
         /* FIN HEADER */
         /* DIV */
+
         .CursosImg {
             box-shadow: 2px 2px 1px;
             border-left: 1px solid gray;
@@ -704,8 +691,8 @@ footer {
         }
 
         /* FIN DIV */
-
         /* FOOTER */
+
         footer h2 {
             font-size: 20px;
             text-align: left;
@@ -735,6 +722,7 @@ footer {
 
     /* Media Queries ALUMNOS */
     /* HEADER */
+
     .gridContainerA {
         .logo {
             width: 80px;
@@ -756,7 +744,6 @@ footer {
         }
 
         /* FIN HEADER */
-
         /* DIV */
 
         .Nair p {
@@ -810,8 +797,8 @@ footer {
         }
 
         /* FIN DIV */
-
         /* FOOTER */
+
         footer h2 {
             font-size: 20px;
             text-align: left;
@@ -840,8 +827,8 @@ footer {
     /* FIN Media Queries ALUMNOS */
 
     /* Media Queries Nosotros */
-
     /* HEADER */
+
     .headerNosotros {
         .logo {
             width: 80px;
@@ -864,8 +851,8 @@ footer {
     }
 
     /* FIN HEADER */
-
     /* DIV */
+
     .quienesSomos {
         h2 {
             background-color: transparent !important;
@@ -895,8 +882,8 @@ footer {
     }
 
     /* FIN DIV */
-
     /* FOOTER */
+
     .Nosotros {
         
         background-image: url("../img/fondonosotros.jpg");
@@ -935,8 +922,8 @@ footer {
     /* FIN Queries Nosotros */
 
     /* Media Queries Contacto */
-
     /* HEADER */
+
     .pagContacto {
 
         .headerContacto {
@@ -1027,6 +1014,7 @@ footer {
 
     /* FIN HEADER */
     /* DIV */
+
     .registroCompra {
         justify-content: end;
         align-items: end;

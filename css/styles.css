@@ -31,6 +31,12 @@
 
 .menu a {
   color: white !important; }
+  .menu a:hover {
+    background-color: #E2EB98;
+    color: black !important;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px black; }
 
 .navbar-collapse {
   flex-grow: 0 !important; }
@@ -109,16 +115,9 @@ header h3 {
     font-style: italic;
     font-size: 14px;
     padding: 5px; }
-  .usuario a:hover {
-    text-decoration: underline;
-    padding: 5px; }
-
-.menu a:hover {
-  background-color: #E2EB98;
-  color: black !important;
-  padding: 3px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px 0px black; }
+    .usuario a:hover {
+      text-decoration: underline;
+      padding: 5px; }
 
 /* Estilos HTML Registro */
 .registroCompra {
@@ -432,19 +431,6 @@ footer {
     font-size: 20px; }
   .gridContainerH .usuario a {
     font-size: 25px; }
-  /* MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
-  /*  .gridContainerH .menu li {
-        text-align: right;
-    } */
-  /*  .gridContainerH ul {
-        text-align: right;
-        margin-bottom: 10px;
-    }
-
-    .gridContainerH .menu a:hover {
-        padding: 8px;
-    } */
-  /* FIN MEDIAS PARA BARRA DE NAVEGACION SIN BOOTSTAP */
   /* FIN HEADER */
   /* DIV */
   .gridContainerH .home h2 {
@@ -607,9 +593,6 @@ footer {
   /* FIN Media Queries ALUMNOS */
   /* Media Queries Nosotros */
   /* HEADER */
-  .Nosotros {
-    background-image: url("../img/fondonosotros.jpg");
-    background-size: cover; }
   .headerNosotros .logo {
     width: 80px;
     height: 80px; }
@@ -644,23 +627,26 @@ footer {
     text-decoration: none; }
   /* FIN DIV */
   /* FOOTER */
-  .Nosotros footer h2 {
-    color: white;
-    font-family: "Extralight";
-    font-size: 20px;
-    text-align: left;
-    padding: 15px; }
-  .Nosotros footer h3 {
-    color: white;
-    font-family: "Extralight";
-    font-size: 20px;
-    text-align: right;
-    margin: 0 10px 5px 0; }
-  .Nosotros .iconos {
-    justify-content: flex-start; }
-  .Nosotros .iconos a {
-    margin-left: 20px;
-    margin-right: 25px; }
+  .Nosotros {
+    background-image: url("../img/fondonosotros.jpg");
+    background-size: cover; }
+    .Nosotros footer h2 {
+      color: white;
+      font-family: "Extralight";
+      font-size: 20px;
+      text-align: left;
+      padding: 15px; }
+    .Nosotros footer h3 {
+      color: white;
+      font-family: "Extralight";
+      font-size: 20px;
+      text-align: right;
+      margin: 0 10px 5px 0; }
+    .Nosotros .iconos {
+      justify-content: flex-start; }
+    .Nosotros .iconos a {
+      margin-left: 20px;
+      margin-right: 25px; }
   /* FIN FOOTER */
   /* FIN Queries Nosotros */
   /* Media Queries Contacto */

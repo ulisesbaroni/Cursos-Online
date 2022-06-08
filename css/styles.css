@@ -373,23 +373,6 @@ footer {
     resize: none;
     border-radius: 5px;
     margin: 0, auto; }
-  .contacto .contact label,
-  .contacto .contact a {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 0.1em;
-    display: block; }
-    .contacto .contact label p,
-    .contacto .contact a p {
-      margin-top: 20px;
-      margin-bottom: 15px; }
-  .contacto .inputC {
-    border-radius: 10px;
-    border-color: black;
-    text-align: center;
-    width: 200px;
-    height: 25px;
-    margin-bottom: 1.2em; }
   .contacto .Enviar {
     border-radius: 10px;
     font-family: "RobotoRegular";
@@ -399,6 +382,25 @@ footer {
     border-color: cornflowerblue;
     padding: 10px 30px;
     margin: 1.2em auto; }
+
+.contact label,
+.contact a {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.1em;
+  display: block; }
+  .contact label p,
+  .contact a p {
+    margin-top: 20px;
+    margin-bottom: 15px; }
+
+.inputC {
+  border-radius: 10px;
+  border-color: black;
+  text-align: center;
+  width: 200px;
+  height: 25px;
+  margin-bottom: 1.2em; }
 
 /* FIN Estilos HTML Contacto */
 /* ------------------ MEDIA QUERIES -------------- */

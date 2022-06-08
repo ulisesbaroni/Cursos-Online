@@ -508,7 +508,21 @@ footer {
         margin: 0, auto;
     }
 
-    .contact label,
+
+.Enviar {
+    border-radius: 10px;
+    font-family: "RobotoRegular";
+    font-size: 16px;
+    background-color: cornflowerblue;
+    color: white;
+    border-color: cornflowerblue;
+    padding: 10px 30px;
+    margin: 1.2em auto;
+}
+
+}
+
+.contact label,
 .contact a {
     text-align: center;
     width: 100%;
@@ -528,19 +542,6 @@ footer {
     width: 200px;
     height: 25px;
     margin-bottom: 1.2em;
-}
-
-.Enviar {
-    border-radius: 10px;
-    font-family: "RobotoRegular";
-    font-size: 16px;
-    background-color: cornflowerblue;
-    color: white;
-    border-color: cornflowerblue;
-    padding: 10px 30px;
-    margin: 1.2em auto;
-}
-
 }
 
 /* FIN Estilos HTML Contacto */
@@ -1060,6 +1061,7 @@ footer {
             height: 30px;
         }
     }
+
 
     /* FIN DIV */
     /* FOOOTER */

@@ -109,7 +109,7 @@ h1 {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%; }
+    width: 100%; }
   to {
     margin: center;
     width: 100%; } }
@@ -143,7 +143,7 @@ h1 {
 /* FIN Estilos HTML Registro */
 /* FIN estilos H1 y header */
 /* Estilos cuerpo del index */
-body {
+.bg, .fondo, .contacto {
   background-color: white; }
 
 .home {
@@ -291,8 +291,13 @@ footer {
 /* FIN Estilos HTML Cursos */
 /* Estilos HTML Alumnos */
 .gridContainerA {
-  background-image: url("../img/fondo.jpg");
-  background-size: cover; }
+  /* background-image: url("../img/fondo.jpg");
+    background-size: cover; */
+  background-color: #ccffff; }
+  @media (min-width: 768px) {
+    .gridContainerA {
+      background-image: url("../img/fondo.jpg");
+      background-size: cover; } }
 
 .Alumnos h3 {
   font-family: "Light";
@@ -314,23 +319,24 @@ footer {
 
 /* FIN Estilos HTML Alumnos */
 /* Estilos HTML Nosotros */
-.quienesSomos h2 {
-  font-family: "Light";
-  text-align: center;
-  font-size: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-.quienesSomos p {
-  background-color: #eeaf99 !important;
-  color: black;
-  text-align: center;
-  font-family: "Light";
-  padding: 2%;
-  font-size: 15px;
-  margin: 20px 10px;
-  border: black solid 2px;
-  border-radius: 15px !important; }
+.quienesSomos {
+  min-height: 70vh; }
+  .quienesSomos h2 {
+    font-family: "Light";
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .quienesSomos p {
+    background-color: #eeaf99 !important;
+    color: black;
+    text-align: center;
+    font-family: "Light";
+    padding: 2%;
+    font-size: 15px;
+    margin: 20px 10px;
+    border: black solid 2px;
+    border-radius: 15px !important; }
 
 .headerNosotros h3 {
   text-align: center;
@@ -383,6 +389,7 @@ footer {
     padding: 10px 30px;
     margin: 1.2em auto; }
 
+/* Clases Contac e imputC aplica tambien a formulario de registro */
 .contact label,
 .contact a {
   text-align: center;

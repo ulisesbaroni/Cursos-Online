@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg">
-   <div class="gridContainerH">
+   <div class="ContainerH">
 
       <header>
          <div class="LogoUser">
@@ -64,16 +64,17 @@
          </nav>
 
       </header>
-      
 
-      <div class="home gridHome">
+
+      <div class="home">
          <div class="title-subtitle">
-         <h2>Cursos de oficios y Cursos de Gestion</h2>
-         <h3>Educar, es Compartir.</h3>
-      </div>
+            <h2>Cursos de oficios y Cursos de Gestion</h2>
+            <h3>Educar, es Compartir.</h3>
+         </div>
 
-         <div class="clearfix shadow-lg p-3 mb-5 bg-body rounded">
-            <img src="./img/equipo1.jpg" class="img-fluid col-md-6 float-md-end mb-3 ms-md-3" alt="Imagen del equipo de trabajo">
+         <div class="text-img-home clearfix shadow-lg p-3 mb-5 bg-body rounded">
+            <img src="./img/equipo1.jpg" class="img-fluid col-md-6 float-md-end mb-3 ms-md-3"
+               alt="Imagen del equipo de trabajo">
 
             <p><em>
                   Nuestra misión es compartir el conocimiento para facilitar a las personas el acceso a una
@@ -102,134 +103,145 @@
                </em></p>
          </div>
 
-         <div class="equipo">
-         <p class="titles-home display-6"><em>Nuestro equipo</em></p>
-         <div id="carouselExampleFade" class="carousel slide carousel-fade equipoimg" data-bs-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <img src="./img/nuestroequipo1.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
+
+         <!-- CARRUSEL DE IMAGENES -->
+         <div class="equipo shadow-lg p-3 mb-5 bg-body rounded">
+            <p class="subtitles-home display-6"><em>Nuestro equipo</em></p>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade equipoimg" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img src="./img/nuestroequipo1.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
+                  </div>
+                  <div class="carousel-item">
+                     <img src="./img/nuestroequipo2.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
+                  </div>
+                  <div class="carousel-item">
+                     <img src="./img/nuestroequipo3.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
+                  </div>
+                  <div class="carousel-item">
+                     <img src="./img/nuestroequipo4.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
+                  </div>
+                  <div class="carousel-item">
+                     <img src="./img/nuestroequipo5.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
+                  </div>
+                  <div class="carousel-item">
+                     <img src="./img/nuestroequipo6.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
+                  </div>
                </div>
-               <div class="carousel-item">
-                  <img src="./img/nuestroequipo2.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
-               </div>
-               <div class="carousel-item">
-                  <img src="./img/nuestroequipo3.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
-               </div>
-               <div class="carousel-item">
-                  <img src="./img/nuestroequipo4.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
-               </div>
-               <div class="carousel-item">
-                  <img src="./img/nuestroequipo5.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
-               </div>
-               <div class="carousel-item">
-                  <img src="./img/nuestroequipo6.png" class="d-block w-100" alt="Imagen del equipo de trabajo">
-               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-               data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-               data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Next</span>
-            </button>
          </div>
-      </div>
 
 
-      <div class="testimonios-home">
-         <p class="titles-home display-6"><em>Testimonios</em></p>
-         <div id="carouselExampleIndicators" class="carousel slide carousel-testimonios" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
+         <div class="testimonios-home">
+            <p class="subtitles-home display-6"><em>Testimonios</em></p>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-testimonios " data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                     aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                     aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                     aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner carousel-inner-bg">
+                  <div class="carousel-item active">
+
+                     <div class="card text-center">
+                        <div class="card-header">
+                           <img src="./img/jose.jpg" class="img-testimonios" alt="Imagen de egresados">
+                        </div>
+                        <div class="card-body">
+                           <h5 class="card-title">JOSE</h5>
+                           <p class="card-text">"Todo el equipo de Kursevi te demuestra que lo único que quieren es
+                              salir
+                              adelante todos juntos. Para mí eso es súper importante. Yo lo veía desde afuera y lo
+                              descubrí
+                              una vez dentro"</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="carousel-item">
+
+                     <div class="card text-center">
+                        <div class="card-header">
+                           <img src="./img/lucas.jpg" class="img-testimonios" alt="Imagen de egresados">
+                        </div>
+                        <div class="card-body">
+                           <h5 class="card-title">LUCAS</h5>
+                           <p class="card-text">"Creo que lo mejor del proceso de aprendizaje en Kursevi es que te
+                              estimula
+                              a descubrir cosas por tu cuenta y seguir creciendo. Es una herramienta muy importante que
+                              me
+                              está dando muchas satisfacciones!"</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="carousel-item">
+
+                     <div class="card text-center">
+                        <div class="card-header">
+                           <img src="./img/dani.jpg" class="img-testimonios" alt="Imagen de egresados">
+                        </div>
+                        <div class="card-body">
+                           <h5 class="card-title">DANIELA</h5>
+                           <p class="card-text">"Una gran experiencia, no solo de aprendizaje, sino sobre todo de
+                              comunidad
+                              colaborativa. Son un gran equipo y dan excelentes oportunidades para aquellos que las
+                              quieren
+                              aprovechar"</p>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
             </div>
-            <div class="carousel-inner carousel-inner-bg">
-               <div class="carousel-item active">
-
-                  <div class="card text-center">
-                     <div class="card-header">
-                        <img src="./img/jose.jpg" class="img-testimonios" alt="Imagen de egresados">
-                     </div>
-                     <div class="card-body">
-                        <h5 class="card-title">JOSE</h5>
-                        <p class="card-text">"Todo el equipo de Kursevi te demuestra que lo único que quieren es salir
-                           adelante todos juntos. Para mí eso es súper importante. Yo lo veía desde afuera y lo descubrí
-                           una vez dentro"</p>
-                     </div>
-                  </div>
-
-               </div>
-               <div class="carousel-item">
-
-                  <div class="card text-center">
-                     <div class="card-header">
-                        <img src="./img/lucas.jpg" class="img-testimonios" alt="Imagen de egresados">
-                     </div>
-                     <div class="card-body">
-                        <h5 class="card-title">LUCAS</h5>
-                        <p class="card-text">"Creo que lo mejor del proceso de aprendizaje en Kursevi es que te estimula
-                           a descubrir cosas por tu cuenta y seguir creciendo. Es una herramienta muy importante que me
-                           está dando muchas satisfacciones!"</p>
-                     </div>
-                  </div>
-
-               </div>
-               <div class="carousel-item">
-
-                  <div class="card text-center">
-                     <div class="card-header">
-                        <img src="./img/dani.jpg" class="img-testimonios" alt="Imagen de egresados">
-                     </div>
-                     <div class="card-body">
-                        <h5 class="card-title">DANIELA</h5>
-                        <p class="card-text">"Una gran experiencia, no solo de aprendizaje, sino sobre todo de comunidad
-                           colaborativa. Son un gran equipo y dan excelentes oportunidades para aquellos que las quieren
-                           aprovechar"</p>
-                     </div>
-                  </div>
-
-               </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-               data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-               data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Next</span>
-            </button>
          </div>
-      </div>
 
-         <p class="titles-home display-6"><em>Modalidades de cursado</em></p>
-
-         <div class="container px-4 shadow-lg">
-            <div class="row gx-5">
-              <div class="col">
-               <img src="./img/Online.png" class="img-cursado" alt="Icono curso online">
-               <p><em>Part-time Online</em></p>
-               <div class="p-3 border bg-light">Exclusivamente para aquellas personas que quieren aprender mientras trabajan. Estudia 3 horas por día con clases 100% a remoto y en vivo.
+         <div class="modal-cursado shadow-lg p-3 mb-5 bg-body rounded">
+            <p class="subtitles-home display-6"><em>Modalidades de cursado</em></p>
+            <div class="container px-4 shadow-lg">
+               <div class="row gx-5">
+                  <div class="col">
+                     <img src="./img/Online.png" class="img-cursado" alt="Icono curso online">
+                     <p><em>Part-time Online</em></p>
+                     <div class="p-3 border bg-light">Exclusivamente para aquellas personas que quieren aprender
+                        mientras
+                        trabajan. Estudia 3 horas por día con clases 100% a remoto y en vivo.
+                     </div>
+                  </div>
+                  <div class="col">
+                     <img src="./img/Presencial.png" class="img-cursado" alt="Icono curso Presencial">
+                     <p><em>100% Presencial</em></p>
+                     <div class="p-3 border bg-light">Es la modalidad ideal para quienes quieren empezar y terminar una
+                        carrera en muy poco tiempo. Estudia 8 horas diaras + clases grabadas.</div>
+                  </div>
                </div>
-              </div>
-              <div class="col">
-               <img src="./img/Presencial.png" class="img-cursado" alt="Icono curso Presencial">
-               <p><em>100% Presencial</em></p>
-                <div class="p-3 border bg-light">Es la modalidad ideal para quienes quieren empezar y terminar una carrera en muy poco tiempo. Estudia 8 horas diaras + clases grabadas.</div>
-              </div>
             </div>
-          </div>
+         </div>
 
-
-         <footer>
+         <footer class="footer">
             <hr>
             <h2>Seguinos en nuestras redes.</h2>
             <div class="iconos">
@@ -241,12 +253,12 @@
             <h3>© Kursevi 2022. Todos los derechos reservados.</h3>
          </footer>
       </div>
+   </div>
 
 
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-      </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+   </script>
 </body>
 
 </html>

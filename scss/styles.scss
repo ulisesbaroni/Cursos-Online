@@ -38,6 +38,11 @@
     src: url(../fonts/Montserrat-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Nanum";
+    src: url(../fonts/NanumGothic-Bold.ttf);
+}
+
 /* FIN FUENTES */
 
 /* -----------EDITANDO BOOTSTRAP--------- */
@@ -90,7 +95,6 @@ header {
     background-image: url(../img/FondoHeader.jpg);
     background-size: cover;
     padding: 5px;
-    margin-bottom: 20px;
 
     h2 {
         text-align: center;
@@ -209,6 +213,131 @@ h1 {
 
 /* Estilos cuerpo del index */
 
+/* probando actualizacion */
+
+
+
+/* TEXTO E IMAGEN DE INICIO */
+.title-subtitle {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color:white;
+}
+
+
+.bg-body {
+    background-color:#2B4162 !important;
+    margin-bottom: 0em !important;
+    
+    p {
+        color: white;
+        padding-top: 1,5em;
+    }
+
+    .animate {
+        margin-top:2em !important;
+        font-weight: bold;
+    }
+}
+/* FIN TEXTO E IMAGEN DE INICIO */
+
+.display-6 {
+    font-weight: bold !important;
+}
+
+.titles-home {
+    font-family: $font-title;
+}
+
+
+/* CARRUSEL IMAGENES */
+
+.equipo {
+    background-color: white;
+    padding-top: 5em;
+}
+
+.equipoimg {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+.card {
+    margin: 2em;
+}
+/* FIN CARRUSEL IMAGENES */
+
+
+/* CARRUSEL TESTIMONIOS */
+.testimonios-home {
+    padding-top: 5em;
+
+    .carousel-testimonios {
+        margin-top:1em;
+        margin-bottom: 5em;
+        margin-left: 5%;
+        margin-right: 5%;
+    
+        .carousel-inner-bg {
+            background-color:black;
+            border-radius: 5px;
+    
+            .card-header {
+                background-color:yellow;
+    
+                .img-testimonios {
+                    border-radius: 50%;
+                }
+            }
+    
+            .card-body {
+                background-color:white;
+            }
+    
+            .card-title {
+                font-weight: bold;
+            }
+    
+            .card-text {
+                font-weight: bolder;
+            }
+     
+        }
+    }
+}
+
+/* FIN CARRUSEL TESTIMONIOS */
+
+/* MODALIDAD DE CURSADO */
+.px-4 {
+    background-color: rgb(54, 54, 54);
+    border-radius: 1em;
+
+    .img-cursado {
+        border-radius: 50%;
+        margin-top: 1em;
+    }
+
+    p {
+        font-weight: bold;
+        color:white;
+    }
+
+    .bg-light {
+        background-color:yellow !important;
+        margin-bottom: 1em;
+        font-weight: bold;
+        border-radius: 1em;
+    }
+}
+/* MODALIDAD DE CURSADO */
+
+
+
+
+/* FIN probando actualizacion */
+
 .bg {
     background-color:color(primary);
 }
@@ -229,7 +358,7 @@ h1 {
         font-size: 15px;
     }
 
-    .texto {
+    /* .texto {
         background: linear-gradient(70deg, #E2EB98, white);
         color: black;
         text-align: center;
@@ -256,7 +385,7 @@ h1 {
         max-height: 95%;
         padding: 10px;
         margin: auto;
-    }
+    } */
 
 }
 
@@ -264,7 +393,7 @@ h1 {
 
 /* GRIDS INDEX*/
 
-.gridContainerH {
+/* .gridContainerH {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat 1fr auto 1fr;
@@ -283,7 +412,7 @@ header {
 
 footer {
     grid-area: footer;
-}
+} */
 
 /* FIN GRIDS INDEX */
 
@@ -341,6 +470,7 @@ footer {
         margin-bottom: 0.5em;
         display: block;
     }
+
 
     .CursosImg {
         box-shadow: 2px 2px 1px;
@@ -412,42 +542,6 @@ footer {
 /* FIN GRIDS Cursos */
 /* FIN Estilos HTML Cursos */
 
-/* Estilos HTML Alumnos */
-.gridContainerA {
-    /* background-image: url("../img/fondo.jpg");
-    background-size: cover; */
-    background-color:color(secundary-light);
-
-    @include desktop{
-    background-image: url("../img/fondo.jpg");
-    background-size: cover;
-    }
-}
-
-.Alumnos {
-    h3 {
-        font-family: $font-title;
-        color: black;
-        text-align: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-    p {
-        background:$bgcolor-dec-alumnos;
-        color: black;
-        text-align: center;
-        font-family: $font-title;
-        padding: 2%;
-        font-size: 15px;
-        margin: 20px 10px;
-        /* border: black solid 2px; */
-        border-radius: 15px;
-    }
-}
-
-
-/* FIN Estilos HTML Alumnos */
 
 /* Estilos HTML Nosotros */
 
@@ -568,6 +662,33 @@ footer {
 
 
 /* ------------------ MEDIA QUERIES -------------- */
+@media screen and (min-width:1200px) {
+    .clearfix p {
+        font-size: 30px;
+    }
+
+    .card-body {
+        h5 {
+            font-size: 35px; 
+        }
+
+        p {
+            font-size: 30px;
+        }
+        
+    }
+
+    .px-4 {
+        p {
+            font-size: 25px;
+        }
+
+        .bg-light {
+            font-size: 20px;
+        }
+    }
+
+}
 
 @media screen and (min-width:768px) {
 
@@ -605,24 +726,6 @@ footer {
         h3 {
             font-size: 30px;
             margin-bottom: 25px;
-        }
-
-        .texto {
-            padding: 2%;
-            font-size: 30px;
-            margin: 20px 150px;
-        }
-
-        .imgNosotros {
-            max-width: 50%;
-            max-height: 50%;
-            margin: 50px auto;
-        }
-
-        .video {
-            width: 800px;
-            height: 500px;
-            margin-bottom: 50px;
         }
 
     }
@@ -754,112 +857,6 @@ footer {
     /* FIN FOOTER */
     /* FIN Media Queries CURSOS */
 
-
-    /* Media Queries ALUMNOS */
-    /* HEADER */
-
-    .gridContainerA {
-        .logo {
-            width: 80px;
-            height: 80px;
-        }
-
-        header h3 {
-            font-size: 40px;
-            margin-bottom: 60px;
-        }
-
-        .menu a {
-            padding: 8px;
-            font-size: 20px;
-        }
-
-        .usuario a {
-            font-size: 25px;
-        }
-
-        /* FIN HEADER */
-        /* DIV */
-
-        .Nair p {
-            font-size: 20px;
-            margin: 20px 40% 20px 20px;
-        }
-
-        .Nair h3 {
-            text-align: left;
-            margin-left: 3%;
-        }
-
-        .Melisa p {
-            font-size: 20px;
-            margin: 20px 20px 20px 40%;
-        }
-
-        .Melisa h3 {
-            text-align: right;
-            margin-right: 3%;
-        }
-
-        .Eneas p {
-            font-size: 20px;
-            margin: 20px 40% 20px 20px;
-        }
-
-        .Eneas h3 {
-            text-align: left;
-            margin-left: 3%;
-        }
-
-        .Ariadna p {
-            font-size: 20px;
-            margin: 20px 20px 20px 40%;
-        }
-
-        .Ariadna h3 {
-            text-align: right;
-            margin-right: 3%;
-        }
-
-        .Francisco p {
-            font-size: 20px;
-            margin: 20px 40% 20px 20px;
-        }
-
-        .Francisco h3 {
-            text-align: left;
-            margin-left: 3%;
-        }
-
-        /* FIN DIV */
-        /* FOOTER */
-
-        footer h2 {
-            font-size: 20px;
-            text-align: left;
-            padding: 15px;
-        }
-
-        footer h3 {
-            font-size: 20px;
-            text-align: right;
-            margin: 0 10px 5px 0;
-
-        }
-
-        .iconos {
-            justify-content: flex-start;
-
-        }
-
-        .iconos a {
-            margin-left: 20px;
-            margin-right: 15px;
-        }
-    }
-
-    /* FIN FOOTER */
-    /* FIN Media Queries ALUMNOS */
 
     /* Media Queries Nosotros */
     /* HEADER */

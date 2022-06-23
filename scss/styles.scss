@@ -267,7 +267,7 @@ footer {
         h2 {
             font-size: 18px;
         }
-    
+
         h3 {
             font-size: 15px;
         }
@@ -358,11 +358,11 @@ footer {
 
                 .card-body {
                     background-color: white;
-    
+
                     .card-title {
                         font-weight: bold;
                     }
-    
+
                     .card-text {
                         font-weight: bolder;
                     }
@@ -430,54 +430,96 @@ footer {
         background-color: rgb(92, 148, 221) !important;
         color: white;
         margin-bottom: 1em;
-        font-weight:bolder;
+        font-weight: bolder;
         border-radius: 1em;
     }
 }
+
 /* FIN COMO FUNCIONA */
 
 /* CURSOS MAS BUSCADOS */
 
 .cursos-populares {
+    background-color: #1d2735;
+    padding-top: 2em !important;
+    padding-bottom: 5em;
+    margin-top: 1em;
 
-    padding-top: 2em;
+    p {
+        color: white;
+    }
 
-    
     .col {
 
+        margin-top: 1em;
+
         .p-3 {
-            padding: 3px !important;
-            background-color:rgb(0, 0, 0) !important;
+            padding: 2px !important;
+            background: linear-gradient(90deg, rgb(208, 255, 0) 0%, rgb(183, 0, 255) 100%) !important;
             min-width: 325px;
             border-radius: 10px;
 
-           .card-body {
+            .card-body {
 
-            a {
-                font-weight:bold !important;
-                color: black;
+                background-color: #404449;
+
+                a {
+                    font-weight: bold !important;
+                    color: rgb(0, 0, 0);
+                    font-size: 18px;
+                    text-decoration: none;
+
+
+                    &:hover {
+                        font-size: 20px;
+                        text-decoration: underline;
+
+                    }
+
+                }
+
+                .card-title {
+                    font-weight: bold;
+                    color: white;
+                }
+
             }
 
-            .card-title {
-                font-weight:bold;
-                color: rgb(47, 86, 158);
+            .list-group-item {
+                background-color: #404449;
+                color: white;
+            }
+
+            .bg-card-info {
+                background-color: rgb(255, 255, 0);
+
             }
 
         }
 
-        ul {
-            font-weight:bold !important;
-        }
-
-.bg-card-info {
-    background-color: yellow;
-}
-           
-        }
-    
 
     }
 
+}
+
+.seguinos-redes {
+    display: flex;
+    justify-content: center;
+    
+    .card-img {
+        max-width: 2000px;
+        max-height: 500px;
+    }
+
+    h5 {
+        font-weight: bold;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+    }
+
+    p {
+        font-weight: bold;
+    }
 }
 
 
@@ -717,15 +759,15 @@ footer {
 @media screen and (min-width:1200px) {
 
     /* HOME */
-.title-subtitle {
-    h2 {
-        font-size: 35px !important;
-    }
+    .title-subtitle {
+        h2 {
+            font-size: 35px !important;
+        }
 
-    h3 {
-        font-size: 30px !important;
+        h3 {
+            font-size: 30px !important;
+        }
     }
-}
 
     .equipo {
         padding-top: 10em !important;
@@ -807,12 +849,35 @@ footer {
     }
 
     .cursos-populares {
+        padding-top: 3em !important;
+        padding-bottom: 5em !important;
+        margin-top: 5em !important;
+
+
         .container {
             max-width: 2000px !important;
+
+            .card-title {
+                font-size: 30px;
+            }
         }
     }
 
+    .seguinos-redes {
 
+        padding-top: 5em;
+        padding-bottom: 5em;
+
+        h5 {
+            font-size: 45px !important;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        p {
+            font-size: 40px !important;
+        }
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -895,6 +960,22 @@ footer {
             margin-bottom: 25px;
         }
 
+    }
+
+    .seguinos-redes {
+
+        margin-top: 5em;
+        margin-bottom: 5em;
+
+        h5 {
+            font-size: 35px;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        p {
+            font-size: 30px;
+        }
     }
 
     /* FIN DIV HOME */

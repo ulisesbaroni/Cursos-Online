@@ -284,22 +284,50 @@ footer .iconos {
 /* FIN COMO FUNCIONA */
 /* CURSOS MAS BUSCADOS */
 .cursos-populares {
-  padding-top: 2em; }
-  .cursos-populares .col .p-3 {
-    padding: 3px !important;
-    background-color: black !important;
-    min-width: 325px;
-    border-radius: 10px; }
-    .cursos-populares .col .p-3 .card-body a {
-      font-weight: bold !important;
-      color: black; }
-    .cursos-populares .col .p-3 .card-body .card-title {
-      font-weight: bold;
-      color: #2f569e; }
-    .cursos-populares .col .p-3 ul {
-      font-weight: bold !important; }
-    .cursos-populares .col .p-3 .bg-card-info {
-      background-color: yellow; }
+  background-color: #1d2735;
+  padding-top: 2em !important;
+  padding-bottom: 5em;
+  margin-top: 1em; }
+  .cursos-populares p {
+    color: white; }
+  .cursos-populares .col {
+    margin-top: 1em; }
+    .cursos-populares .col .p-3 {
+      padding: 2px !important;
+      background: linear-gradient(90deg, #d0ff00 0%, #b700ff 100%) !important;
+      min-width: 325px;
+      border-radius: 10px; }
+      .cursos-populares .col .p-3 .card-body {
+        background-color: #404449; }
+        .cursos-populares .col .p-3 .card-body a {
+          font-weight: bold !important;
+          color: black;
+          font-size: 18px;
+          text-decoration: none; }
+          .cursos-populares .col .p-3 .card-body a:hover {
+            font-size: 20px;
+            text-decoration: underline; }
+        .cursos-populares .col .p-3 .card-body .card-title {
+          font-weight: bold;
+          color: white; }
+      .cursos-populares .col .p-3 .list-group-item {
+        background-color: #404449;
+        color: white; }
+      .cursos-populares .col .p-3 .bg-card-info {
+        background-color: yellow; }
+
+.seguinos-redes {
+  display: flex;
+  justify-content: center; }
+  .seguinos-redes .card-img {
+    max-width: 2000px;
+    max-height: 500px; }
+  .seguinos-redes h5 {
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-bottom: 1em; }
+  .seguinos-redes p {
+    font-weight: bold; }
 
 /* FIN ESTILOS CUERPO DE HOME */
 /* Estilos HTML Cursos */
@@ -506,8 +534,23 @@ footer {
       font-size: 25px; }
     .procesos .px-4 .bg-light {
       font-size: 20px; }
-  .cursos-populares .container {
-    max-width: 2000px !important; } }
+  .cursos-populares {
+    padding-top: 3em !important;
+    padding-bottom: 5em !important;
+    margin-top: 5em !important; }
+    .cursos-populares .container {
+      max-width: 2000px !important; }
+      .cursos-populares .container .card-title {
+        font-size: 30px; }
+  .seguinos-redes {
+    padding-top: 5em;
+    padding-bottom: 5em; }
+    .seguinos-redes h5 {
+      font-size: 45px !important;
+      padding-top: 2em;
+      padding-bottom: 2em; }
+    .seguinos-redes p {
+      font-size: 40px !important; } }
 
 @media screen and (min-width: 768px) {
   /* Media Queries*/
@@ -550,6 +593,15 @@ footer {
   .title-subtitle h3 {
     font-size: 30px;
     margin-bottom: 25px; }
+  .seguinos-redes {
+    margin-top: 5em;
+    margin-bottom: 5em; }
+    .seguinos-redes h5 {
+      font-size: 35px;
+      padding-top: 2em;
+      padding-bottom: 2em; }
+    .seguinos-redes p {
+      font-size: 30px; }
   /* FIN DIV HOME */
   /* FIN HOME */
   /* HTML CURSOS */

@@ -44,6 +44,8 @@
 
 .navbar-collapse {
   flex-grow: 0 !important; }
+  .navbar-collapse .dropdown-item {
+    text-align: center; }
 
 ul {
   text-align: center; }
@@ -168,7 +170,7 @@ footer .iconos {
 
 /* FIN Estilos HTML Registro */
 /* ESTILOS CUERPO DE HOME */
-.bg, .fondo, .contacto {
+.bg, .fondoC, .contacto {
   background-color: white; }
 
 .home {
@@ -324,15 +326,35 @@ footer .iconos {
     max-height: 500px; }
   .seguinos-redes h5 {
     font-weight: bold;
-    padding-top: 0.5em;
-    padding-bottom: 1em; }
+    padding-top: 1px;
+    padding-bottom: 0.5em; }
   .seguinos-redes p {
+    font-size: 15px;
     font-weight: bold; }
 
 /* FIN ESTILOS CUERPO DE HOME */
 /* Estilos HTML Cursos */
-.fondo {
+.fondoC {
   height: 100vh; }
+  .fondoC .filtros {
+    padding-left: 2%;
+    margin-top: 1em;
+    margin-bottom: 2em; }
+    .fondoC .filtros p {
+      padding-left: 2%;
+      font-size: 23px; }
+    .fondoC .filtros .text-modalidad {
+      font-size: 18px;
+      font-weight: bold;
+      color: cornflowerblue; }
+    .fondoC .filtros .form-check-input {
+      margin-left: 2% !important; }
+    .fondoC .filtros .form-check-label {
+      font-family: "RobotoRegular";
+      font-size: 17px; }
+      .fondoC .filtros .form-check-label:hover {
+        text-decoration: underline;
+        color: #ff4800; }
 
 .cursos {
   font-family: "RobotoRegular";
@@ -348,48 +370,48 @@ footer .iconos {
     margin-bottom: 0.5em;
     display: block; }
   .cursos .CursosImg {
-    box-shadow: 2px 2px 1px;
-    border-left: 1px solid gray;
-    border-top: 1px solid gray;
-    width: 95%;
     height: auto;
     padding: 10px;
     margin: auto;
     margin-bottom: 20px;
     min-height: 50px;
-    min-width: 50%; }
+    max-width: 340px; }
     .cursos .CursosImg h3 {
-      color: blueviolet; }
+      color: cornflowerblue;
+      font-weight: bold; }
     .cursos .CursosImg h5 {
       font-size: 15px;
       margin: 5px; }
-  .cursos .imgCursos {
-    width: 100%;
-    height: 70%;
-    background-size: cover; }
-  .cursos #Comprar {
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: "RobotoRegular";
-    font-size: 16px;
-    background-color: cornflowerblue;
-    color: white;
-    border-color: cornflowerblue;
-    padding: 10px 10px;
-    margin: 0.5em auto;
-    width: 50%;
-    margin: auto; }
+    .cursos .CursosImg .imgCursos {
+      width: 100%;
+      height: 70%;
+      background-size: cover; }
+    .cursos .CursosImg #Comprar {
+      text-decoration: none;
+      border-radius: 10px;
+      font-family: "RobotoRegular";
+      font-size: 16px;
+      background-color: cornflowerblue;
+      color: white;
+      border-color: cornflowerblue;
+      padding: 10px 10px;
+      margin: 0.5em auto;
+      width: 50%;
+      margin: auto; }
 
 /* GRIDS Cursos */
 .gridContainerC {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto 1fr;
-  grid-template-areas: "header" "cursos" "footer"; }
+  grid-template-rows: 2fr 1fr 8fr 2fr;
+  grid-template-areas: "header" "filtros" "cursos" "footer"; }
 
 header {
   grid-area: header; }
+
+.filtros {
+  grid-area: filtros; }
 
 .gridCursos {
   grid-area: cursos; }
@@ -491,67 +513,7 @@ footer {
   margin-bottom: 1.2em; }
 
 /* FIN Estilos HTML Contacto */
-/* ------------------ MEDIA QUERIES -------------- */
-@media screen and (min-width: 1200px) {
-  /* HOME */
-  .title-subtitle h2 {
-    font-size: 35px !important; }
-  .title-subtitle h3 {
-    font-size: 30px !important; }
-  .equipo {
-    padding-top: 10em !important; }
-    .equipo p {
-      padding-bottom: 0.5em; }
-    .equipo .equipoimg {
-      margin-left: 25%;
-      margin-right: 25%;
-      margin-bottom: 3em; }
-  .clearfix p {
-    font-size: 30px; }
-  .card-body h5 {
-    font-size: 35px; }
-  .card-body p {
-    font-size: 30px; }
-  .testimonios-home {
-    padding-top: 10em; }
-    .testimonios-home p {
-      padding-bottom: 0.5em; }
-  .modal-cursado {
-    padding-top: 10em !important; }
-    .modal-cursado p {
-      padding-bottom: 0.5em; }
-    .modal-cursado .px-4 p {
-      font-size: 25px; }
-    .modal-cursado .px-4 .bg-light {
-      font-size: 20px; }
-  .procesos {
-    padding-top: 10em !important; }
-    .procesos .container {
-      max-width: 2000px !important; }
-    .procesos p {
-      padding-bottom: 0.5em; }
-    .procesos .px-4 p {
-      font-size: 25px; }
-    .procesos .px-4 .bg-light {
-      font-size: 20px; }
-  .cursos-populares {
-    padding-top: 3em !important;
-    padding-bottom: 5em !important;
-    margin-top: 5em !important; }
-    .cursos-populares .container {
-      max-width: 2000px !important; }
-      .cursos-populares .container .card-title {
-        font-size: 30px; }
-  .seguinos-redes {
-    padding-top: 5em;
-    padding-bottom: 5em; }
-    .seguinos-redes h5 {
-      font-size: 45px !important;
-      padding-top: 2em;
-      padding-bottom: 2em; }
-    .seguinos-redes p {
-      font-size: 40px !important; } }
-
+/* ------------------ MEDIA QUERIES 768px-------------- */
 @media screen and (min-width: 768px) {
   /* Media Queries*/
   /* HEADER */
@@ -605,36 +567,18 @@ footer {
   /* FIN DIV HOME */
   /* FIN HOME */
   /* HTML CURSOS */
-  .gridContainerC {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-areas: "header header header" "cursos cursos cursos" "footer footer footer";
-    /* DIV */ }
-    .gridContainerC .CursosImg {
-      box-shadow: 2px 2px 1px;
-      border-left: 1px solid gray;
-      border-top: 1px solid gray;
-      width: 29%;
-      height: auto;
-      padding: 10px;
-      margin: 10px;
-      /* margin-bottom: 20px; */
-      min-height: 10px;
-      min-width: 10%;
-      display: inline-block;
-      margin-bottom: 50px; }
-    .gridContainerC .CursoInfo h3 {
-      font-size: 15px; }
-    .gridContainerC header {
-      grid-area: header; }
-    .gridContainerC .gridCursos {
-      grid-area: cursos; }
-    .gridContainerC footer {
-      grid-area: footer; }
-  /* FIN DIV*/
+  .cursos p {
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .cursos .CursosImg {
+    margin: 10px;
+    min-height: 10px;
+    min-width: 340px;
+    display: inline-block; }
+  .cursos .CursoInfo h3 {
+    font-size: 20px; }
+  .cursos .CursoInfo h5 {
+    font-size: 20px; }
   /* FIN CURSOS */
   /* HTML NOSOTROS*/
   /* DIV */
@@ -717,4 +661,104 @@ footer {
   /* FIN FOOTER */
   /* FIN  REGISTRO/INSCRIPCION */ }
 
-/*LLAVE QUE CIERRA MEDIA QUERIES -- FIN Medias Queries */
+/* ------------------FIN MEDIA QUERIES 768px-------------- */
+/* ------------------ MEDIA QUERIES 1200px-------------- */
+@media screen and (min-width: 1200px) {
+  /* HOME */
+  .title-subtitle h2 {
+    font-size: 35px !important; }
+  .title-subtitle h3 {
+    font-size: 30px !important; }
+  .equipo {
+    padding-top: 10em !important; }
+    .equipo p {
+      padding-bottom: 0.5em; }
+    .equipo .equipoimg {
+      margin-left: 25%;
+      margin-right: 25%;
+      margin-bottom: 3em; }
+  .clearfix p {
+    font-size: 30px; }
+  .card-body h5 {
+    font-size: 35px; }
+  .card-body p {
+    font-size: 30px; }
+  .testimonios-home {
+    padding-top: 10em; }
+    .testimonios-home p {
+      padding-bottom: 0.5em; }
+  .modal-cursado {
+    padding-top: 10em !important; }
+    .modal-cursado p {
+      padding-bottom: 0.5em; }
+    .modal-cursado .px-4 p {
+      font-size: 25px; }
+    .modal-cursado .px-4 .bg-light {
+      font-size: 20px; }
+  .procesos {
+    padding-top: 10em !important; }
+    .procesos .container {
+      max-width: 2000px !important; }
+    .procesos p {
+      padding-bottom: 0.5em; }
+    .procesos .px-4 p {
+      font-size: 25px; }
+    .procesos .px-4 .bg-light {
+      font-size: 20px; }
+  .cursos-populares {
+    padding-top: 3em !important;
+    padding-bottom: 5em !important;
+    margin-top: 5em !important; }
+    .cursos-populares .container {
+      max-width: 2000px !important; }
+      .cursos-populares .container .card-title {
+        font-size: 30px; }
+  .seguinos-redes {
+    padding-top: 5em;
+    padding-bottom: 5em; }
+    .seguinos-redes h5 {
+      font-size: 45px !important;
+      padding-top: 2em;
+      padding-bottom: 2em; }
+    .seguinos-redes p {
+      font-size: 40px !important; }
+  /* FIN HOME */
+  /* CURSOS */
+  .filtros {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    max-width: 250px;
+    margin-top: 3em !important; }
+    .filtros .text-filtrar {
+      font-size: 30px !important;
+      margin-bottom: 1.5em; }
+    .filtros .text-modalidad {
+      font-size: 25px !important; }
+    .filtros .form-check-input {
+      margin-left: 1% !important; }
+    .filtros .form-check-label {
+      font-size: 17px; }
+  .gridContainerC {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    grid-template-rows: 2fr 8fr 2fr;
+    grid-template-areas: "header header" "filtros cursos" "footer footer"; }
+    .gridContainerC header {
+      grid-area: header; }
+    .gridContainerC .filtros {
+      grid-area: filtros; }
+    .gridContainerC .gridCursos {
+      grid-area: cursos; }
+    .gridContainerC footer {
+      grid-area: footer; }
+    .gridContainerC #Comprar {
+      font-size: 20px !important; }
+    .gridContainerC .cursos p {
+      margin-top: 2em;
+      margin-bottom: 2em; }
+    .gridContainerC .cursos .CursosImg {
+      max-width: 450px !important;
+      margin-bottom: 05em !important; } }
+
+/* ------------------ FIN MEDIA QUERIES 1200px-------------- */

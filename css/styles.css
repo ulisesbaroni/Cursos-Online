@@ -121,25 +121,56 @@ h1 {
 
 /* FIN  ESTILOS HEADER Y H1*/
 /* ESTILOS FOOTER */
-footer h2 {
-  font-size: 18px;
-  font-family: "RobotoRegular";
-  text-align: center;
-  padding: 10px; }
-
-footer h3 {
-  font-size: 18px;
-  font-family: "RobotoRegular";
-  text-align: center;
-  margin-top: 20px; }
-
-footer a img:hover {
-  transform: scale(1.15);
-  box-shadow: 10px 10px 10px 0px cornflowerblue; }
-
-footer .iconos {
-  display: flex;
-  justify-content: space-around; }
+footer {
+  background: linear-gradient(0deg, #000b19 0%, #202c5d 100%); }
+  footer .subtitle-footer {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 2em;
+    padding-top: 3em; }
+  footer .institucion p {
+    color: #6172a0;
+    font-family: "RobotoRegular";
+    font-size: large; }
+    footer .institucion p a {
+      color: #6172a0;
+      text-decoration: none; }
+      footer .institucion p a:hover {
+        color: #7e88a1; }
+  footer .medios-contacto {
+    padding-bottom: 2em; }
+    footer .medios-contacto p {
+      color: #6172a0;
+      font-family: "RobotoRegular";
+      font-size: large; }
+      footer .medios-contacto p img {
+        padding-right: 1em; }
+      footer .medios-contacto p a {
+        color: #6172a0;
+        text-decoration: none; }
+        footer .medios-contacto p a:hover {
+          color: #7e88a1; }
+  footer h2 {
+    color: white;
+    font-size: 18px;
+    font-family: "RobotoRegular";
+    text-align: center;
+    padding: 10px; }
+  footer h3 {
+    color: white;
+    font-size: 18px;
+    font-family: "RobotoRegular";
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 2em; }
+  footer .iconos {
+    display: inline-flex;
+    justify-content: center; }
+    footer .iconos a {
+      padding-left: 1em;
+      padding-right: 1em; }
+      footer .iconos a:hover {
+        transform: scale(1.25); }
 
 /* FIN ESTILOS FOOTER */
 /* ESTILOS HTML REGISTRO */
@@ -293,11 +324,14 @@ footer .iconos {
   .cursos-populares p {
     color: white; }
   .cursos-populares .col {
-    margin-top: 1em; }
+    margin-top: 1em;
+    display: flex;
+    justify-content: center; }
     .cursos-populares .col .p-3 {
       padding: 2px !important;
       background: linear-gradient(90deg, #d0ff00 0%, #b700ff 100%) !important;
       min-width: 325px;
+      max-width: 450px;
       border-radius: 10px; }
       .cursos-populares .col .p-3 .card-body {
         background-color: #404449; }
@@ -320,7 +354,8 @@ footer .iconos {
 
 .seguinos-redes {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 3em; }
   .seguinos-redes .card-img {
     max-width: 2000px;
     max-height: 500px; }
@@ -533,19 +568,20 @@ footer {
     font-size: 25px; }
   /* FIN HEADER */
   /* FOOTER */
+  .footer .info-footer {
+    display: flex;
+    justify-content: center; }
+    .footer .info-footer .institucion {
+      padding-right: 3em; }
+    .footer .info-footer .medios-contacto {
+      padding-left: 3em; }
   .footer h2 {
     font-size: 20px;
-    text-align: left;
     padding: 15px; }
   .footer h3 {
     font-size: 20px;
     text-align: right;
     margin: 0 10px 5px 0; }
-  .footer .iconos {
-    justify-content: flex-start; }
-  .footer .iconos a {
-    margin-left: 20px;
-    margin-right: 15px; }
   /* FIN FOOTER */
   /* HTML HOME */
   /* DIV HOME */
@@ -664,6 +700,20 @@ footer {
 /* ------------------FIN MEDIA QUERIES 768px-------------- */
 /* ------------------ MEDIA QUERIES 1200px-------------- */
 @media screen and (min-width: 1200px) {
+  .footer .info-footer p {
+    font-size: 20px; }
+  .footer .info-footer .institucion {
+    padding-right: 5em; }
+    .footer .info-footer .institucion div {
+      font-size: 25px; }
+  .footer .info-footer .medios-contacto {
+    padding-left: 5em; }
+    .footer .info-footer .medios-contacto div {
+      font-size: 25px; }
+  .footer h2 {
+    font-size: 25px; }
+  .footer h3 {
+    font-size: 25px; }
   /* HOME */
   .title-subtitle h2 {
     font-size: 35px !important; }
@@ -684,11 +734,14 @@ footer {
   .card-body p {
     font-size: 30px; }
   .testimonios-home {
-    padding-top: 10em; }
+    padding-top: 10em;
+    padding-left: 20em;
+    padding-right: 20em; }
     .testimonios-home p {
       padding-bottom: 0.5em; }
   .modal-cursado {
-    padding-top: 10em !important; }
+    padding-top: 10em !important;
+    margin-bottom: 10em !important; }
     .modal-cursado p {
       padding-bottom: 0.5em; }
     .modal-cursado .px-4 p {
@@ -696,11 +749,11 @@ footer {
     .modal-cursado .px-4 .bg-light {
       font-size: 20px; }
   .procesos {
-    padding-top: 10em !important; }
+    padding-top: 2em !important; }
     .procesos .container {
       max-width: 2000px !important; }
     .procesos p {
-      padding-bottom: 0.5em; }
+      padding-bottom: 1em; }
     .procesos .px-4 p {
       font-size: 25px; }
     .procesos .px-4 .bg-light {
@@ -725,20 +778,20 @@ footer {
   /* FIN HOME */
   /* CURSOS */
   .filtros {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    max-width: 250px;
-    margin-top: 3em !important; }
+    margin-top: 3em !important;
+    text-align: right;
+    padding-right: 2em; }
     .filtros .text-filtrar {
       font-size: 30px !important;
-      margin-bottom: 1.5em; }
+      margin-bottom: 1.5em;
+      margin-right: 19px; }
     .filtros .text-modalidad {
       font-size: 25px !important; }
     .filtros .form-check-input {
-      margin-left: 1% !important; }
+      margin-left: 1% !important;
+      float: right; }
     .filtros .form-check-label {
-      font-size: 17px; }
+      font-size: 20px !important; }
   .gridContainerC {
     display: grid;
     grid-template-columns: 3fr 8fr;

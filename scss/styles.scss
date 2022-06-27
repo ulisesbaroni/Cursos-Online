@@ -187,6 +187,8 @@ h1 {
 /* ESTILOS FOOTER */
 footer {
 
+    text-align: center;
+
     background: linear-gradient(0deg, rgba(0, 11, 25, 1) 0%, rgba(32, 44, 93, 1) 100%);
 
     .subtitle-footer {
@@ -522,7 +524,7 @@ footer {
         justify-content: center;
 
         .p-3 {
-            
+
             padding: 2px !important;
             background: linear-gradient(90deg, rgb(208, 255, 0) 0%, rgb(183, 0, 255) 100%) !important;
             min-width: 325px;
@@ -852,6 +854,17 @@ footer {
 /* FIN Estilos HTML Contacto */
 
 
+/* HTML UBICACIÓN */
+    .mapa {
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 90vh;
+    }
+/* FIN HTML UBICACIÓN */
+
 
 
 
@@ -1035,30 +1048,14 @@ footer {
 
     }
 
-    /* FIN DIV */
-    /* FOOTER */
-
     .Nosotros {
 
         background-image: url("../img/fondonosotros.jpg");
         background-size: cover;
 
-        footer {
-
-            h2 {
-                color: white;
-                font-family: "Extralight";
-            }
-
-            h3 {
-                color: white;
-                font-family: "Extralight";
-            }
-        }
-
     }
 
-    /* FIN FOOTER*/
+    /* FIN DIV */
     /* FIN NOSOTROS */
 
 
@@ -1122,22 +1119,6 @@ footer {
     }
 
     /* FIN DIV */
-    /* FOOOTER */
-
-    .pagRegistro {
-        footer h2 {
-            color: white;
-            font-family: "Extralight";
-        }
-
-        footer h3 {
-            color: white;
-            font-family: "Extralight";
-        }
-
-    }
-
-    /* FIN FOOTER */
     /* FIN  REGISTRO/INSCRIPCION */
 
 }
@@ -1154,9 +1135,9 @@ footer {
     .footer {
 
         .info-footer {
-             p {
+            p {
                 font-size: 20px;
-             }
+            }
 
             .institucion {
                 padding-right: 5em;

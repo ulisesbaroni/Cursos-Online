@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -122,6 +123,7 @@ h1 {
 /* FIN  ESTILOS HEADER Y H1*/
 /* ESTILOS FOOTER */
 footer {
+  text-align: center;
   background: linear-gradient(0deg, #000b19 0%, #202c5d 100%); }
   footer .subtitle-footer {
     color: white;
@@ -548,6 +550,16 @@ footer {
   margin-bottom: 1.2em; }
 
 /* FIN Estilos HTML Contacto */
+/* HTML UBICACIÓN */
+.mapa {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 90vh; }
+
+/* FIN HTML UBICACIÓN */
 /* ------------------ MEDIA QUERIES 768px-------------- */
 @media screen and (min-width: 768px) {
   /* Media Queries*/
@@ -637,18 +649,10 @@ footer {
     margin-left: 23%;
     text-align: center;
     text-decoration: none; }
-  /* FIN DIV */
-  /* FOOTER */
   .Nosotros {
     background-image: url("../img/fondonosotros.jpg");
     background-size: cover; }
-    .Nosotros footer h2 {
-      color: white;
-      font-family: "Extralight"; }
-    .Nosotros footer h3 {
-      color: white;
-      font-family: "Extralight"; }
-  /* FIN FOOTER*/
+  /* FIN DIV */
   /* FIN NOSOTROS */
   /* HTML CONTACTO */
   .contactoC {
@@ -687,14 +691,6 @@ footer {
         width: 250px;
         height: 30px; }
   /* FIN DIV */
-  /* FOOOTER */
-  .pagRegistro footer h2 {
-    color: white;
-    font-family: "Extralight"; }
-  .pagRegistro footer h3 {
-    color: white;
-    font-family: "Extralight"; }
-  /* FIN FOOTER */
   /* FIN  REGISTRO/INSCRIPCION */ }
 
 /* ------------------FIN MEDIA QUERIES 768px-------------- */

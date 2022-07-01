@@ -45,39 +45,25 @@
 
 /* FIN FUENTES */
 
+
+//ANIMACIONES
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin: center;
+        width: 100%;
+    }
+}
+
+//FIN ANIMACIONES
+
 /* -----------EDITANDO BOOTSTRAP--------- */
-.navbar-toggler {
-    background-color: whitesmoke;
-}
 
-.dropdown-menu {
-    background-color: rgb(87, 85, 85) !important;
-    border: 1px solid whitesmoke !important;
-}
-
-.menu a {
-    color: white !important;
-
-    &:hover {
-        background-color: color(bg-hovercolor);
-        color: black !important;
-        padding: 3px;
-        border-radius: 10px;
-        box-shadow: 10px 10px 10px 0px black;
-    }
-}
-
-.navbar-collapse {
-    flex-grow: 0 !important;
-
-    .dropdown-item {
-        text-align: center;
-    }
-}
-
-ul {
-    text-align: center;
-}
 
 .form-check-input {
     margin-left: 37% !important;
@@ -151,7 +137,47 @@ header {
                 text-decoration: underline;
                 padding: 5px;
             }
+
         }
+
+    }
+
+    .menu {
+
+        .navbar-toggler {
+            background-color: white;
+        }
+
+        a {
+            color: white !important;
+
+            &:hover {
+                background-color: color(bg-hovercolor);
+                color: black !important;
+                padding: 3px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 10px 0px black;
+            }
+        }
+
+        .navbar-collapse {
+            flex-grow: 0 !important;
+
+            .dropdown-menu {
+                background-color: rgb(87, 85, 85) !important;
+                border: 1px solid whitesmoke !important;
+
+                .dropdown-item {
+                    text-align: center;
+                }
+            }
+
+        }
+
+        ul {
+            text-align: center;
+        }
+
     }
 
 }
@@ -165,19 +191,7 @@ h1 {
     font-size: 25px;
 }
 
-//ANIMACIONES
 
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 100%;
-    }
-
-    to {
-        margin: center;
-        width: 100%;
-    }
-}
 
 /* FIN  ESTILOS HEADER Y H1*/
 
@@ -186,7 +200,6 @@ h1 {
 
 /* ESTILOS FOOTER */
 footer {
-
     text-align: center;
 
     background: linear-gradient(0deg, rgba(0, 11, 25, 1) 0%, rgba(32, 44, 93, 1) 100%);
@@ -254,8 +267,11 @@ footer {
         font-size: 18px;
         font-family: $font;
         text-align: center;
-        margin-top: 20px;
+        margin: 20px 0 0 0 !important;
+        /* margin-bottom: 0 !important; */
         padding-top: 2em;
+        padding-bottom: 0.5em;
+
     }
 
     .iconos {
@@ -282,6 +298,11 @@ footer {
 
 
 /* ESTILOS HTML REGISTRO */
+.pagRegistro {
+
+    background-image: url("../img/fondoinscrpcion.png");
+    background-size: cover;
+}
 
 .registroCompra {
     display: block;
@@ -292,12 +313,17 @@ footer {
     min-height: 70vh;
 
     h2 {
+        color: white;
         text-align: center;
         font-style: italic;
         margin-top: 30px;
         margin-bottom: 30px;
         animation-duration: 3s;
         animation-name: slidein;
+    }
+
+    label {
+        color: white;
     }
 }
 
@@ -738,54 +764,123 @@ footer {
 
 /* Estilos HTML Nosotros */
 
-.quienesSomos {
+.Nosotros {
 
-    min-height: 70vh;
+    .quienesSomos {
+        padding-top: 1em;
 
-    h2 {
-        font-family: $font-title;
-        text-align: center;
-        font-size: 25px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+
+        .training {
+
+            .img-formacion {
+
+                width: 100%;
+                margin-top: 1em;
+                display: block;
+
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    justify-content: center;
+                }
+            }
+
+            p {
+                text-align: center;
+                font-family: $font;
+            }
+
+            .text-1 {
+                padding-top: 1em;
+                color: #72777e;
+            }
+
+            .text-2 {
+                padding-top: 1em;
+                color: #63686e;
+
+                .boton-nc {
+                    display: flex;
+                    justify-content: center;
+
+                    .botonNuestros {
+                        border-radius: 10px;
+                        font-family: $font;
+                        font-size: 16px;
+                        background-color: cornflowerblue;
+                        border-color: cornflowerblue;
+                        padding: 10px 10px;
+                        margin: auto;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        display: inline-block;
+                        justify-content: center;
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .media-video {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 3em;
+
+            .video {
+                width: 100%;
+                max-width: 460px;
+                height: 250px;
+            }
+        }
+
     }
 
-    p {
-        background-color: rgb(238, 175, 153) !important;
-        color: black;
+
+    .mision-vision {
+        background: $bgcolor-aqua;
+        padding-top: 1em;
         text-align: center;
-        font-family: $font-title;
-        padding: 2%;
-        font-size: 15px;
-        margin: 20px 10px;
-        border: black solid 2px;
-        border-radius: 15px !important;
+        max-width: 100%;
+
+        img {
+            padding: 1em;
+        }
+
+        .subtitle-nosotros {
+            color: rgb(54, 68, 68);
+            font-family: $font;
+            font-size: 25px;
+            font-weight: bold;
+
+            p {
+                color: rgb(53, 78, 78);
+                padding: 1em;
+                font-size: 18px;
+                font-weight: lighter;
+            }
+        }
     }
-}
 
-.headerNosotros h3 {
-    text-align: center;
-    color: white;
-    font-family: $font-title;
-    font-style: italic;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
+    .certificaciones {
 
-.botonNuestros {
-    border-radius: 10px;
-    font-family: $font;
-    font-size: 16px;
-    background-color: cornflowerblue;
-    color: white;
-    border-color: cornflowerblue;
-    padding: 10px 10px;
-    width: 40%;
-    margin: auto;
-    margin-bottom: 20px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
+        padding-top: 2em;
+        padding-bottom: 5em;
+        padding-left: 1em;
+        padding-right: 1em;
+
+        p {
+            text-align: center;
+            padding-bottom: 0.5em;
+            font-size: 20px;
+        }
+
+    }
+
 }
 
 /* FIN Estilos HTML Nosotros */
@@ -793,32 +888,47 @@ footer {
 /* Estilos HTML Contacto */
 
 .contacto {
-    @extend .bg;
+
+
+    .contact {
+        width: 100%;
+        padding-top: 2em !important;
+        padding-bottom: 2em !important;
+        background-color: #1d324b
+    }
+
+
     display: block;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: $font;
     min-height: 70vh;
 
     h2 {
+        background-color: #a3223a;
+        color: white;
+        font-size: 35px !important;
         text-align: center;
         font-style: italic;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin-bottom: 0;
+
     }
 
     textarea {
         resize: none;
         border-radius: 5px;
         margin: 0, auto;
+        max-width: 95%;
     }
 
 
     .Enviar {
         border-radius: 10px;
         font-family: $font;
-        font-size: 16px;
+        font-size: 18px;
         background-color: cornflowerblue;
         color: white;
         border-color: cornflowerblue;
@@ -851,19 +961,23 @@ footer {
     margin-bottom: 1.2em;
 }
 
-/* FIN Estilos HTML Contacto */
+.text-ubicacion {
 
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
 
-/* HTML UBICACIÓN */
-    .mapa {
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 90vh;
-    }
-/* FIN HTML UBICACIÓN */
+}
+
+.mapa {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70vh;
+}
+
+/* FIN HTML CONTACTO */
 
 
 
@@ -941,6 +1055,7 @@ footer {
             font-size: 20px;
             text-align: right;
             margin: 0 10px 5px 0;
+            padding-right: 0.5em;
         }
 
     }
@@ -1019,48 +1134,58 @@ footer {
 
 
     /* HTML NOSOTROS*/
-    /* DIV */
-    .quienesSomos {
-        h2 {
-            background-color: transparent !important;
-            color: white !important;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            font-size: 35px;
-        }
-
-        p {
-            background-color: transparent !important;
-            color: white;
-            text-align: left center;
-            font-size: 28px;
-            margin: 20px 55% 20px 10%;
-            border: darkgrey solid 2px;
-        }
-
-        .botonNuestros {
-            font-size: 18px;
-            width: 10%;
-            margin-left: 23%;
-            text-align: center;
-            text-decoration: none;
-        }
-
-    }
-
     .Nosotros {
 
-        background-image: url("../img/fondonosotros.jpg");
-        background-size: cover;
+        .quienesSomos {
 
+            .training {
+
+                max-width: 1026px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+
+                .text-1 {
+                    padding-bottom: 1em;
+                }
+
+                .text-2 {
+                    font-size: 23px;
+                }
+
+                .botonNuestros {
+                    font-size: 18px;
+                }
+            }
+
+        }
+
+        .video {
+            max-width: 700px !important;
+            height: 400px !important;
+        }
+
+        .certificaciones {
+
+            p {
+                margin-bottom: 1.5em;
+                font-size: 25px;
+            }
+        }
     }
 
-    /* FIN DIV */
     /* FIN NOSOTROS */
 
 
 
     /* HTML CONTACTO */
+
+    .contacto {
+        h2 {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+    }
 
     .contactoC {
         display: flex;
@@ -1068,8 +1193,24 @@ footer {
     }
 
     .contactoA {
-        width: 400px;
+        width: 500px;
         display: block;
+
+        .form-switch {
+            padding-left: 1.5em;
+        }
+
+        .select {
+            width: 95%;
+        }
+
+        .consulta {
+            width: 95%;
+        }
+    }
+
+    .Enviar {
+        font-size: 25px !important;
     }
 
     /* FIN CONTACTO */
@@ -1080,9 +1221,6 @@ footer {
     /* DIV */
     .pagRegistro {
 
-        background-image: url("../img/fondoinscrpcion.png");
-        background-size: cover;
-
         .registroCompra {
             justify-content: end;
             align-items: end;
@@ -1090,7 +1228,6 @@ footer {
 
             h2 {
                 display: flex;
-                color: white;
                 font-size: 60px;
                 margin-top: 3%;
                 margin-left: 3%;
@@ -1104,7 +1241,6 @@ footer {
 
             label {
                 font-size: 25px;
-                color: white;
             }
 
             .inputC {
@@ -1132,6 +1268,7 @@ footer {
 /* ------------------ MEDIA QUERIES 1200px-------------- */
 @media screen and (min-width:1200px) {
 
+    /* FOOTER */
     .footer {
 
         .info-footer {
@@ -1166,6 +1303,8 @@ footer {
         }
 
     }
+
+    /* FIN FOOTER */
 
 
     /* HOME */
@@ -1370,7 +1509,88 @@ footer {
 
     }
 
+    /* FIN CURSOS */
+
+
+    /* NOSOTROS */
+
+    .training {
+
+        margin-top: 7em;
+
+        .text-historia {
+            display: flex;
+            justify-content: center;
+
+            .text-1 {
+                display: block;
+                width: 500px;
+                padding-right: 1em;
+                font-size: 45px;
+
+            }
+
+            .text-2 {
+                display: block;
+                width: 500px;
+
+                .botonNuestros {
+                    font-size: 22px !important;
+                }
+            }
+
+        }
+
+    }
+
+    .media-video {
+        margin-top: 7em;
+        margin-bottom: 4em;
+    }
+
+    .subtitle-nosotros {
+
+        font-size: 30px !important;
+
+        p {
+
+            font-size: 25px !important;
+
+        }
+
+    }
+
+    .certificaciones {
+
+        .p-1 {
+            font-size: 30px !important;
+        }
+    }
+
 
 }
 
 /* ------------------ FIN MEDIA QUERIES 1200px-------------- */
+
+
+
+
+/* ------------------ MEDIA QUERIES 2000px-------------- */
+
+.contacto {
+
+    h2 {
+        font-size: 50px;
+    }
+
+    font-size: 28px;
+
+    .inputC {
+        border-radius: 10px;
+        border-color: black;
+        text-align: center;
+        width: 250px;
+        height: 35px;
+
+    }
+}

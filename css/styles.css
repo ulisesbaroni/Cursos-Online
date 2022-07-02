@@ -387,6 +387,11 @@ footer {
       font-size: 18px;
       font-weight: bold;
       color: cornflowerblue; }
+    .fondoC .filtros .text-tipo-cursos {
+      font-size: 18px;
+      font-weight: bold;
+      color: cornflowerblue;
+      padding-top: 1em; }
     .fondoC .filtros .form-check-input {
       margin-left: 2% !important; }
     .fondoC .filtros .form-check-label {
@@ -553,7 +558,6 @@ footer {
   .contacto h2 {
     background-color: #a3223a;
     color: white;
-    font-size: 35px !important;
     text-align: center;
     font-style: italic;
     padding-top: 0.5em;
@@ -582,7 +586,9 @@ footer {
   text-align: center;
   width: 100%;
   margin-bottom: 0.1em;
-  display: block; }
+  display: block;
+  animation-duration: 3s;
+  animation-name: slidein; }
   .contact label p,
   .contact a p {
     margin-top: 20px;
@@ -712,7 +718,7 @@ footer {
     .contactoA .consulta {
       width: 95%; }
   .Enviar {
-    font-size: 25px !important; }
+    font-size: 23px !important; }
   /* FIN CONTACTO */
   /* HTML REGISTRO/INSCRIPCION */
   /* DIV */
@@ -737,6 +743,8 @@ footer {
       border-color: black;
       width: 250px;
       height: 30px; }
+    .pagRegistro .registroCompra .botonCompra {
+      font-size: 23px; }
   /* FIN DIV */
   /* FIN  REGISTRO/INSCRIPCION */ }
 
@@ -832,6 +840,8 @@ footer {
       margin-right: 19px; }
     .filtros .text-modalidad {
       font-size: 25px !important; }
+    .filtros .text-tipo-cursos {
+      font-size: 25px !important; }
     .filtros .form-check-input {
       margin-left: 1% !important;
       float: right; }
@@ -887,13 +897,14 @@ footer {
 
 /* ------------------ FIN MEDIA QUERIES 1200px-------------- */
 /* ------------------ MEDIA QUERIES 2000px-------------- */
-.contacto {
-  font-size: 28px; }
-  .contacto h2 {
-    font-size: 50px; }
-  .contacto .inputC {
-    border-radius: 10px;
-    border-color: black;
-    text-align: center;
-    width: 250px;
-    height: 35px; }
+@media screen and (min-width: 1200px) {
+  .contacto {
+    font-size: 28px; }
+    .contacto h2 {
+      font-size: 50px; }
+    .contacto .inputC {
+      border-radius: 10px;
+      border-color: black;
+      text-align: center;
+      width: 250px;
+      height: 35px; } }

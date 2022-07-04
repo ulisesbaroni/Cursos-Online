@@ -217,14 +217,16 @@ footer {
     margin-top: 2em !important;
     font-weight: bold; }
   .text-img-home .btn-ver-cursos {
-    font-size: 16px;
     background-color: #f8002d;
-    color: white;
-    font-weight: bold;
     padding: 10px 10px;
     border-radius: 10px;
     border-color: #f8002d;
     margin-top: 1em; }
+    .text-img-home .btn-ver-cursos a {
+      text-decoration: none;
+      font-size: 16px;
+      color: white;
+      font-weight: bold; }
     .text-img-home .btn-ver-cursos:hover {
       transform: scale(1.1); }
 
@@ -844,8 +846,9 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .btn-ver-cursos {
-    font-size: 20px !important;
     margin-top: 2em !important; }
+    .btn-ver-cursos a {
+      font-size: 20px !important; }
   .contacto {
     font-size: 28px; }
     .contacto h2 {

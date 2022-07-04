@@ -274,9 +274,11 @@ footer {
 
 // FIN Estilos FOOTER
 
+//////////////////////
 
 
 
+/////////////////////
 
 // Estilos HTML Registro/compra
 .pagRegistro {
@@ -373,7 +375,7 @@ footer {
 
     .btn-ver-cursos {
         background-color: #f8002d;
-        
+
         padding: 10px 10px;
         border-radius: 10px;
         border-color: #f8002d;
@@ -646,6 +648,7 @@ footer {
         }
 
         .form-check-input {
+            margin-right: 1%;
             margin-left: 2% !important;
         }
 
@@ -911,6 +914,17 @@ footer {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         margin-bottom: 0;
+    }
+    
+    .form-check-input {
+    
+        margin-left: 37% !important;
+        margin-right: 8px !important;
+    }
+
+    .form-check-label {
+        text-align: left !important;
+
     }
 
     .select {
@@ -1180,7 +1194,6 @@ footer {
 
 
     // html CONTACTO
-
     .contacto {
         h2 {
             padding-top: 1em;
@@ -1205,15 +1218,6 @@ footer {
             width: 95%;
         }
 
-        .form-check-input {
-            margin-left: 37% !important;
-            margin-right: 8px !important;
-        }
-        
-        .form-check-label {
-            text-align: left !important;
-        
-        }
     }
 
     .Enviar {
@@ -1603,10 +1607,10 @@ footer {
 
         margin-top: 2em !important;
 
-        a{
-            
-        font-size: 20px !important;
-    }
+        a {
+
+            font-size: 20px !important;
+        }
 
     }
 

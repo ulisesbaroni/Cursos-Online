@@ -374,6 +374,7 @@ footer {
       color: cornflowerblue;
       padding-top: 1em; }
     .fondoC .filtros .form-check-input {
+      margin-right: 1%;
       margin-left: 2% !important; }
     .fondoC .filtros .form-check-label {
       font-family: "RobotoRegular";
@@ -540,6 +541,11 @@ footer {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: 0; }
+  .contacto .form-check-input {
+    margin-left: 37% !important;
+    margin-right: 8px !important; }
+  .contacto .form-check-label {
+    text-align: left !important; }
   .contacto .select {
     max-width: 95%; }
   .contacto textarea {
@@ -676,11 +682,6 @@ footer {
       padding-left: 1.5em; }
     .contactoA .consulta {
       width: 95%; }
-    .contactoA .form-check-input {
-      margin-left: 37% !important;
-      margin-right: 8px !important; }
-    .contactoA .form-check-label {
-      text-align: left !important; }
   .Enviar {
     font-size: 23px !important; }
   .pagRegistro .registroCompra {

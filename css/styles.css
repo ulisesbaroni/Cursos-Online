@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-/* FUENTES */
 @font-face {
   font-family: "RobotoRegular";
   src: url(../fonts/RobotoCondensed-Regular.ttf); }
@@ -24,7 +23,6 @@
   font-family: "Nanum";
   src: url(../fonts/NanumGothic-Bold.ttf); }
 
-/* FIN FUENTES */
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -33,16 +31,6 @@
     margin: center;
     width: 100%; } }
 
-/* -----------EDITANDO BOOTSTRAP--------- */
-.form-check-input {
-  margin-left: 37% !important;
-  margin-right: 8px !important; }
-
-.form-check-label {
-  text-align: left !important; }
-
-/* -----------FIN EDITANDO BOOTSTRAP--------- */
-/* ESTILOS HEADER Y H1 */
 header {
   background-image: url(../img/FondoHeader.jpg);
   background-size: cover;
@@ -114,8 +102,6 @@ h1 {
   font-style: italic;
   font-size: 25px; }
 
-/* FIN  ESTILOS HEADER Y H1*/
-/* ESTILOS FOOTER */
 footer {
   text-align: center;
   background: linear-gradient(0deg, #000b19 0%, #202c5d 100%); }
@@ -170,8 +156,6 @@ footer {
       footer .iconos a:hover {
         transform: scale(1.25); }
 
-/* FIN ESTILOS FOOTER */
-/* ESTILOS HTML REGISTRO */
 .pagRegistro {
   background-image: url("../img/fondoinscrpcion.png");
   background-size: cover; }
@@ -204,8 +188,6 @@ footer {
   padding: 10px 30px;
   margin: 1.2em auto; }
 
-/* FIN Estilos HTML Registro */
-/* ESTILOS CUERPO DE HOME */
 .bg, .fondoC {
   background-color: white; }
 
@@ -220,7 +202,6 @@ footer {
   .home .title-subtitle h3 {
     font-size: 15px; }
 
-/* TEXTO + IMAGEN */
 .title-subtitle {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -235,25 +216,30 @@ footer {
   .text-img-home .animate {
     margin-top: 2em !important;
     font-weight: bold; }
+  .text-img-home .btn-ver-cursos {
+    font-size: 16px;
+    background-color: #f8002d;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-color: #f8002d;
+    margin-top: 1em; }
+    .text-img-home .btn-ver-cursos:hover {
+      transform: scale(1.1); }
 
-/* FIN TEXTO + IMAGEN */
-/* TITULOS */
 .display-6 {
   font-weight: bold !important; }
 
 .subtitles-home {
   font-family: "Light"; }
 
-/* FIN TITULOS */
-/* CARRUSEL IMAGENES */
 .equipo {
   background-color: white;
   padding-top: 2em !important; }
   .equipo .equipoimg {
     margin-bottom: 0.5em; }
 
-/* FIN CARRUSEL IMAGENES */
-/* CARRUSEL TESTIMONIOS */
 .testimonios-home .carousel-testimonios {
   margin-top: 1em;
   margin-bottom: 3em;
@@ -275,8 +261,6 @@ footer {
         .testimonios-home .carousel-testimonios .carousel-inner-bg .card .card-body .card-text {
           font-weight: bolder; }
 
-/* FIN CARRUSEL TESTIMONIOS */
-/* MODALIDAD DE CURSADO */
 .px-4 {
   background-color: #363636;
   border-radius: 1em;
@@ -294,8 +278,6 @@ footer {
     font-weight: bold;
     border-radius: 1em; }
 
-/* FIN MODALIDAD DE CURSADO */
-/* COMO FUNCIONA */
 .procesos .px-4 {
   background-color: white;
   padding-left: 4em !important;
@@ -319,8 +301,6 @@ footer {
   font-weight: bolder;
   border-radius: 1em; }
 
-/* FIN COMO FUNCIONA */
-/* CURSOS MAS BUSCADOS */
 .cursos-populares {
   background-color: #1d2735;
   padding-top: 2em !important;
@@ -338,6 +318,8 @@ footer {
       min-width: 325px;
       max-width: 450px;
       border-radius: 10px; }
+      .cursos-populares .col .p-3 .card {
+        border-radius: 10px; }
       .cursos-populares .col .p-3 .card-body {
         background-color: #404449; }
         .cursos-populares .col .p-3 .card-body a {
@@ -346,7 +328,6 @@ footer {
           font-size: 18px;
           text-decoration: none; }
           .cursos-populares .col .p-3 .card-body a:hover {
-            font-size: 20px;
             text-decoration: underline; }
         .cursos-populares .col .p-3 .card-body .card-title {
           font-weight: bold;
@@ -372,8 +353,6 @@ footer {
     font-size: 15px;
     font-weight: bold; }
 
-/* FIN ESTILOS CUERPO DE HOME */
-/* Estilos HTML Cursos */
 .fondoC {
   height: 100vh; }
   .fondoC .filtros {
@@ -444,7 +423,6 @@ footer {
       width: 50%;
       margin: auto; }
 
-/* GRIDS Cursos */
 .gridContainerC {
   height: 100vh;
   display: grid;
@@ -464,9 +442,6 @@ header {
 footer {
   grid-area: footer; }
 
-/* FIN GRIDS Cursos */
-/* FIN Estilos HTML Cursos */
-/* Estilos HTML Nosotros */
 .Nosotros .quienesSomos {
   padding-top: 1em; }
   .Nosotros .quienesSomos .training .img-formacion {
@@ -520,6 +495,8 @@ footer {
   max-width: 100%; }
   .Nosotros .mision-vision img {
     padding: 1em; }
+    .Nosotros .mision-vision img:hover {
+      transform: scale(1.05); }
   .Nosotros .mision-vision .subtitle-nosotros {
     color: #364444;
     font-family: "RobotoRegular";
@@ -541,8 +518,6 @@ footer {
     padding-bottom: 0.5em;
     font-size: 20px; }
 
-/* FIN Estilos HTML Nosotros */
-/* Estilos HTML Contacto */
 .contacto {
   display: block;
   text-align: center;
@@ -580,15 +555,13 @@ footer {
     padding: 10px 30px;
     margin: 1.2em auto; }
 
-/* Clases Contac e imputC aplica tambien a formulario de registro */
 .contact label,
 .contact a {
   text-align: center;
   width: 100%;
   margin-bottom: 0.1em;
   display: block;
-  animation-duration: 3s;
-  animation-name: slidein; }
+  animation-duration: 3s; }
   .contact label p,
   .contact a p {
     margin-top: 20px;
@@ -614,11 +587,7 @@ footer {
   width: 100%;
   height: 70vh; }
 
-/* FIN HTML CONTACTO */
-/* ------------------ MEDIA QUERIES 768px-------------- */
 @media screen and (min-width: 768px) {
-  /* Media Queries*/
-  /* HEADER */
   header .logo {
     width: 80px;
     height: 80px; }
@@ -633,8 +602,6 @@ footer {
     font-size: 20px; }
   header .usuario a {
     font-size: 25px; }
-  /* FIN HEADER */
-  /* FOOTER */
   .footer .info-footer {
     display: flex;
     justify-content: center; }
@@ -650,9 +617,6 @@ footer {
     text-align: right;
     margin: 0 10px 5px 0;
     padding-right: 0.5em; }
-  /* FIN FOOTER */
-  /* HTML HOME */
-  /* DIV HOME */
   .title-subtitle h2 {
     font-size: 35px;
     margin: 30px; }
@@ -668,9 +632,6 @@ footer {
       padding-bottom: 2em; }
     .seguinos-redes p {
       font-size: 30px; }
-  /* FIN DIV HOME */
-  /* FIN HOME */
-  /* HTML CURSOS */
   .cursos p {
     margin-top: 1em;
     margin-bottom: 1em; }
@@ -683,8 +644,6 @@ footer {
     font-size: 20px; }
   .cursos .CursoInfo h5 {
     font-size: 20px; }
-  /* FIN CURSOS */
-  /* HTML NOSOTROS*/
   .Nosotros .quienesSomos .training {
     max-width: 1026px;
     margin-left: auto;
@@ -702,8 +661,6 @@ footer {
   .Nosotros .certificaciones p {
     margin-bottom: 1.5em;
     font-size: 25px; }
-  /* FIN NOSOTROS */
-  /* HTML CONTACTO */
   .contacto h2 {
     padding-top: 1em;
     padding-bottom: 1em; }
@@ -717,11 +674,13 @@ footer {
       padding-left: 1.5em; }
     .contactoA .consulta {
       width: 95%; }
+    .contactoA .form-check-input {
+      margin-left: 37% !important;
+      margin-right: 8px !important; }
+    .contactoA .form-check-label {
+      text-align: left !important; }
   .Enviar {
     font-size: 23px !important; }
-  /* FIN CONTACTO */
-  /* HTML REGISTRO/INSCRIPCION */
-  /* DIV */
   .pagRegistro .registroCompra {
     justify-content: end;
     align-items: end;
@@ -738,20 +697,14 @@ footer {
     .pagRegistro .registroCompra label {
       font-size: 25px; }
     .pagRegistro .registroCompra .inputC {
-      /* TAMBIEN APLICA EN FORMULARIO DECONTACTO */
       font-size: 18px;
       border-color: black;
       width: 250px;
       height: 30px; }
     .pagRegistro .registroCompra .botonCompra {
-      font-size: 23px; }
-  /* FIN DIV */
-  /* FIN  REGISTRO/INSCRIPCION */ }
+      font-size: 23px; } }
 
-/* ------------------FIN MEDIA QUERIES 768px-------------- */
-/* ------------------ MEDIA QUERIES 1200px-------------- */
 @media screen and (min-width: 1200px) {
-  /* FOOTER */
   .footer .info-footer p {
     font-size: 20px; }
   .footer .info-footer .institucion {
@@ -766,8 +719,6 @@ footer {
     font-size: 25px; }
   .footer h3 {
     font-size: 25px; }
-  /* FIN FOOTER */
-  /* HOME */
   .title-subtitle h2 {
     font-size: 35px !important; }
   .title-subtitle h3 {
@@ -828,8 +779,6 @@ footer {
       padding-bottom: 2em; }
     .seguinos-redes p {
       font-size: 40px !important; }
-  /* FIN HOME */
-  /* CURSOS */
   .filtros {
     margin-top: 3em !important;
     text-align: right;
@@ -868,8 +817,6 @@ footer {
     .gridContainerC .cursos .CursosImg {
       max-width: 450px !important;
       margin-bottom: 05em !important; }
-  /* FIN CURSOS */
-  /* NOSOTROS */
   .training {
     margin-top: 7em; }
     .training .text-historia {
@@ -895,9 +842,10 @@ footer {
   .certificaciones .p-1 {
     font-size: 30px !important; } }
 
-/* ------------------ FIN MEDIA QUERIES 1200px-------------- */
-/* ------------------ MEDIA QUERIES 2000px-------------- */
 @media screen and (min-width: 1200px) {
+  .btn-ver-cursos {
+    font-size: 20px !important;
+    margin-top: 2em !important; }
   .contacto {
     font-size: 28px; }
     .contacto h2 {

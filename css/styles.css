@@ -159,34 +159,50 @@ footer {
 .pagRegistro {
   background-image: url("../img/fondoinscrpcion.png");
   background-size: cover; }
-
-.registroCompra {
-  display: block;
-  text-align: center;
-  color: black;
-  font-size: 20px;
-  font-family: "RobotoRegular";
-  min-height: 70vh; }
-  .registroCompra h2 {
-    color: white;
+  .pagRegistro .registroCompra {
+    display: block;
     text-align: center;
-    font-style: italic;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    animation-duration: 3s;
-    animation-name: slidein; }
-  .registroCompra label {
-    color: white; }
-
-.botonCompra {
-  border-radius: 10px;
-  font-family: "RobotoRegular";
-  font-size: 16px;
-  background-color: cornflowerblue;
-  color: white;
-  border-color: cornflowerblue;
-  padding: 10px 30px;
-  margin: 1.2em auto; }
+    color: black;
+    font-size: 20px;
+    font-family: "RobotoRegular";
+    min-height: 70vh; }
+    .pagRegistro .registroCompra h2 {
+      color: white;
+      text-align: center;
+      font-style: italic;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      animation-duration: 3s;
+      animation-name: slidein; }
+    .pagRegistro .registroCompra label {
+      color: white; }
+    .pagRegistro .registroCompra .regis label,
+    .pagRegistro .registroCompra .regis a {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 0.1em;
+      display: block;
+      animation-duration: 3s; }
+      .pagRegistro .registroCompra .regis label p,
+      .pagRegistro .registroCompra .regis a p {
+        margin-top: 20px;
+        margin-bottom: 15px; }
+    .pagRegistro .registroCompra .inputR {
+      border-radius: 10px;
+      border-color: black;
+      text-align: center;
+      width: 200px;
+      height: 25px;
+      margin-bottom: 1.2em; }
+    .pagRegistro .registroCompra .botonCompra {
+      border-radius: 10px;
+      font-family: "RobotoRegular";
+      font-size: 16px;
+      background-color: cornflowerblue;
+      color: white;
+      border-color: cornflowerblue;
+      padding: 10px 30px;
+      margin: 1.2em auto; }
 
 .bg, .fondoC {
   background-color: white; }
@@ -528,11 +544,6 @@ footer {
   font-size: 20px;
   font-family: "RobotoRegular";
   min-height: 70vh; }
-  .contacto .contact {
-    width: 100%;
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-    background-color: #1d324b; }
   .contacto h2 {
     background-color: #a3223a;
     color: white;
@@ -541,47 +552,49 @@ footer {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: 0; }
-  .contacto .form-check-input {
-    margin-left: 37% !important;
-    margin-right: 8px !important; }
-  .contacto .form-check-label {
-    text-align: left !important; }
-  .contacto .select {
-    max-width: 95%; }
-  .contacto textarea {
-    resize: none;
-    border-radius: 5px;
-    margin: 0, auto;
-    max-width: 95%; }
-  .contacto .Enviar {
-    border-radius: 10px;
-    font-family: "RobotoRegular";
-    font-size: 18px;
-    background-color: cornflowerblue;
-    color: white;
-    border-color: cornflowerblue;
-    padding: 10px 30px;
-    margin: 1.2em auto; }
-
-.contact label,
-.contact a {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 0.1em;
-  display: block;
-  animation-duration: 3s; }
-  .contact label p,
-  .contact a p {
-    margin-top: 20px;
-    margin-bottom: 15px; }
-
-.inputC {
-  border-radius: 10px;
-  border-color: black;
-  text-align: center;
-  width: 200px;
-  height: 25px;
-  margin-bottom: 1.2em; }
+  .contacto .contact {
+    width: 100%;
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+    background-color: #1d324b; }
+    .contacto .contact label,
+    .contacto .contact a {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 0.1em;
+      display: block;
+      animation-duration: 3s; }
+    .contacto .contact .inputC {
+      border-radius: 10px;
+      border-color: black;
+      text-align: center;
+      width: 200px;
+      height: 25px;
+      margin-bottom: 1.2em; }
+    .contacto .contact .form-ok {
+      display: inline-block; }
+    .contacto .contact .label-ok {
+      display: inline-block;
+      margin: auto !important; }
+    .contacto .contact .select {
+      max-width: 95%; }
+    .contacto .contact p {
+      margin-top: 20px;
+      margin-bottom: 15px; }
+    .contacto .contact textarea {
+      resize: none;
+      border-radius: 5px;
+      margin: 0, auto;
+      max-width: 95%; }
+    .contacto .contact .Enviar {
+      border-radius: 10px;
+      font-family: "RobotoRegular";
+      font-size: 18px;
+      background-color: cornflowerblue;
+      color: white;
+      border-color: cornflowerblue;
+      padding: 10px 30px;
+      margin: 1.2em auto; }
 
 .text-ubicacion {
   text-align: center;
@@ -688,22 +701,9 @@ footer {
     justify-content: end;
     align-items: end;
     align-content: end; }
-    .pagRegistro .registroCompra h2 {
-      display: flex;
-      justify-content: center;
-      font-size: 60px;
-      margin-bottom: 1em;
-      margin-top: 0.5em; }
     .pagRegistro .registroCompra .regis {
       width: 40%;
       margin-left: 30%; }
-    .pagRegistro .registroCompra label {
-      font-size: 25px; }
-    .pagRegistro .registroCompra .inputC {
-      font-size: 18px;
-      border-color: black;
-      width: 250px;
-      height: 30px; }
     .pagRegistro .registroCompra .botonCompra {
       font-size: 23px; } }
 
@@ -722,10 +722,26 @@ footer {
     font-size: 25px; }
   .footer h3 {
     font-size: 25px; }
+  .registroCompra h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    margin-bottom: 1em;
+    margin-top: 0.5em; }
+  .registroCompra label {
+    font-size: 23px; }
+  .registroCompra .inputR {
+    font-size: 18px;
+    width: 250px !important;
+    height: 35px !important; }
   .title-subtitle h2 {
     font-size: 35px !important; }
   .title-subtitle h3 {
     font-size: 30px !important; }
+  .btn-ver-cursos {
+    margin-top: 2em !important; }
+    .btn-ver-cursos a {
+      font-size: 20px !important; }
   .equipo {
     padding-top: 10em !important; }
     .equipo p {
@@ -843,20 +859,12 @@ footer {
     .subtitle-nosotros p {
       font-size: 25px !important; }
   .certificaciones .p-1 {
-    font-size: 30px !important; } }
-
-@media screen and (min-width: 1200px) {
-  .btn-ver-cursos {
-    margin-top: 2em !important; }
-    .btn-ver-cursos a {
-      font-size: 20px !important; }
+    font-size: 30px !important; }
   .contacto {
     font-size: 28px; }
     .contacto h2 {
       font-size: 50px; }
     .contacto .inputC {
-      border-radius: 10px;
-      border-color: black;
-      text-align: center;
-      width: 250px;
-      height: 35px; } }
+      font-size: 18px;
+      width: 250px !important;
+      height: 35px !important; } }
